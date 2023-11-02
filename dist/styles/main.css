@@ -1,3 +1,196 @@
+@import "https://fonts.googleapis.com/css2?family=League+Gothic&display=swap";
+* {
+  box-sizing: border-box;
+  color: #c0b599;
+  margin: 0;
+  padding: 0;
+}
 
+:root {
+  font-size: 65.5%;
+}
+
+.container {
+  background-blend-mode: darken;
+  background-image: url("../arcane-header.ea1f666e.jpeg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.arcane {
+  background-color: #000000b7;
+  width: 100%;
+  max-height: 70.938rem;
+}
+
+.arcane_nav {
+  text-align: center;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  justify-content: space-between;
+  align-items: center;
+  height: 15rem;
+  font-size: 2.3rem;
+  display: flex;
+}
+
+.arcanearc_nav_theme {
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background-color: #ffffffc5;
+  justify-content: center;
+  align-items: center;
+  width: 1.25rem;
+  height: auto;
+  display: flex;
+}
+
+.links {
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 2rem;
+  display: flex;
+}
+
+.img-logo {
+  width: 13.5rem;
+}
+
+.img-icon {
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.img-icon2 {
+  cursor: pointer;
+  width: 4rem;
+  height: 5rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.img-icon:hover, .img-icon2:hover {
+  width: 7rem;
+  height: 7rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.title-big {
+  color: #8b6b37;
+  letter-spacing: 1px;
+  font-family: League Gothic, sans-serif;
+  font-size: 3.4rem;
+}
+
+.title--medium {
+  color: #c0b599;
+  text-transform: none;
+  font-family: League Gothic, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.bar {
+  box-shadow: 3px solid #ffffffb2;
+  background-color: #5e4507;
+  border-radius: 10px;
+  width: 23rem;
+  height: 5px;
+  margin: 10px 0;
+}
+
+.arc__box {
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  text-align: center;
+  background-color: #333e2c67;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 30rem;
+  margin: 1.2rem;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  inset: 5rem 5rem 0 10rem;
+}
+
+input[type="email"] {
+  background: #fff3;
+  border: none;
+  border-radius: 5px;
+  width: 20rem;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-arc {
+  color: #fff;
+  cursor: pointer;
+  background-color: #8b6b37;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+.btn-arc:hover {
+  color: #c0b599;
+  background: linear-gradient(to right, #8b6b37, #5e4507, #000000c2);
+  padding: 1.2rem;
+}
+
+.link-a {
+  text-transform: capitalize;
+  box-shadow: 1px solid #000000ac;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.link-a:hover {
+  color: #5e4507;
+  box-shadow: 1px solid #000000ac;
+  font-size: 2.5rem;
+}
+
+.pags {
+  margin: 1.2rem;
+}
+
+@media screen and (width <= 768px) {
+  .arc__box {
+    padding: 10px;
+    position: relative;
+    inset: 5rem 1rem 0 0;
+  }
+
+  .arc_nav_theme {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.1rem;
+    display: flex;
+  }
+
+  input[type="email"] {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
