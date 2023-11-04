@@ -180,7 +180,38 @@ input[type="email"] {
   margin: 1.2rem;
 }
 
-/* Estilos para dispositivos de largura menor, tornando o header responsivo */
+// zaun introduction
+#zaun-region {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+   padding: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/zaun.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  backdrop-filter: blur(2px);
+}
+
+.title-big {
+  margin: 2.4rem 2.4rem;
+  letter-spacing: 2px; /* Ajuste o espaçamento entre letras */
+}
+
+.img-icon-zaun img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-icon-zaun img:hover {
+  transform: scale(1.1); /* Efeito de escala (hover) na imagem do ícone */
+}
+
+.description-zaun {
+  width: 80%;
+}
+
+// zaun end introduciton
 @media screen and (max-width: 768px) {
   .arc__box {
     padding: 10px;
@@ -198,6 +229,8 @@ input[type="email"] {
   align-items: center;
   backdrop-filter: blur(2px);
 }
+
+
   input[type="email"] {
     width: 100%;
   }

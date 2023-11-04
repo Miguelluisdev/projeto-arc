@@ -172,6 +172,37 @@ input[type="email"] {
   margin: 1.2rem;
 }
 
+#zaun-region {
+  text-align: center;
+  background-blend-mode: darken;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background-color: #0009;
+  background-image: url("../zaun.677ac67d.jpeg");
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem;
+  display: flex;
+}
+
+.title-big {
+  letter-spacing: 2px;
+  margin: 2.4rem;
+}
+
+.img-icon-zaun img {
+  transition: transform .3s ease-in-out;
+}
+
+.img-icon-zaun img:hover {
+  transform: scale(1.1);
+}
+
+.description-zaun {
+  width: 80%;
+}
+
 @media screen and (width <= 768px) {
   .arc__box {
     padding: 10px;
