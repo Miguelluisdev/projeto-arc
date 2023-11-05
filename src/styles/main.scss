@@ -11,6 +11,16 @@
 :root {
   font-size: 65.5%;
 }
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #c0b599;
+  border-radius: 5px;
+}
+
 // header initial
 .container {
    height: 100vh;
