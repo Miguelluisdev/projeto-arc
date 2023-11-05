@@ -1,3 +1,4 @@
+@use 'personagem';
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 
 * {
@@ -436,6 +437,123 @@ input[type="email"] {
 }
 // grid cards end
 
+// zaun city
+
+.zaun-section {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'League Gothic', sans-serif;
+  background-color: rgba(0, 0, 0, 0.922);
+  
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.zaun-title {
+  font-size: 3.4rem;
+  font-family: 'League Gothic', sans-serif;
+}
+
+.slider-container {
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.slider img {
+  width: 50%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.zaun-description-title {
+  font-size: 3.4rem;
+}
+
+.zaun-description {
+  font-size: 2.4rem;
+}
+
+/* Adicione regras de CSS para telas menores (responsividade) */
+@media screen and (max-width: 768px) {
+  .zaun-section {
+      padding: 10px;
+  }
+
+  .zaun-title {
+      font-size: 28px;
+  }
+
+  .zaun-description-title {
+      font-size: 20px;
+  }
+
+  .zaun-description {
+      font-size: 16px;
+  }
+}
+
+// zaun city
+
+// people of zaun
+.container3{
+  display: flex;
+  width: 100%;
+background-color: #050505;
+height: 50%;
+background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/zaun-4.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+
+}
+
+.painel{
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat:  no-repeat;
+  height: 80vh;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.painel h3{
+  font-size: 1.5rem;
+}
+.painel:active{
+  flex: 5;
+}
+.painel.active h3{
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+.text{
+    text-align: center;
+}
+
+@media (max-width: 768px){
+  .container3{
+    width: 100%;
+    height: 50%;
+  }
+  .painel:nth-of-type(4),
+  .painel:nth-of-type(5){
+    display: none;
+  }
+}
+// people zaun end
+
+
 // scroll-top
 
 .scrollTop {
@@ -466,6 +584,7 @@ input[type="email"] {
 }
 
 // scroll-top-end
+
 
 @media screen and (max-width: 768px) {
   .arc__box {

@@ -1,4 +1,68 @@
 @import "https://fonts.googleapis.com/css2?family=League+Gothic&display=swap";
+.personagens {
+  justify-content: center;
+  align-items: center;
+  height: 605px;
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  overflow: hidden;
+}
+
+.personagens__container {
+  width: 100%;
+  display: flex;
+}
+
+.personagens__container .painel {
+  color: #fff;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  flex: .5;
+  height: 405px;
+  margin: 10px;
+  transition: flex .7s ease-in;
+  position: relative;
+}
+
+.personagens__container .painel h3 {
+  opacity: 0;
+  margin: 0;
+  font-size: 2.4rem;
+  position: absolute;
+  bottom: 20px;
+  left: 75px;
+}
+
+.personagens__container .painel.active {
+  flex: 5;
+}
+
+.personagens__container .painel.active h3 {
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+
+@media (width <= 480px) {
+  .personagens {
+    height: 505px;
+  }
+
+  .personagens__container {
+    width: 100vw;
+  }
+
+  .personagens .painel h3 {
+    left: 20px;
+  }
+
+  .personagens .painel:nth-of-type(4), .personagens .painel:nth-of-type(5) {
+    display: none;
+  }
+}
+
 * {
   box-sizing: border-box;
   color: #c0b599;
@@ -366,6 +430,115 @@ input[type="email"] {
   color: #c0b599;
   font-family: League Gothic, sans-serif;
   font-size: 2.4rem;
+}
+
+.zaun-section {
+  text-align: center;
+  background-blend-mode: darken;
+  background-color: #000000eb;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: League Gothic, sans-serif;
+}
+
+.zaun-title {
+  font-family: League Gothic, sans-serif;
+  font-size: 3.4rem;
+}
+
+.slider-container {
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.slider {
+  transition: transform .5s;
+  display: flex;
+}
+
+.slider img {
+  width: 50%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.zaun-description-title {
+  font-size: 3.4rem;
+}
+
+.zaun-description {
+  font-size: 2.4rem;
+}
+
+@media screen and (width <= 768px) {
+  .zaun-section {
+    padding: 10px;
+  }
+
+  .zaun-title {
+    font-size: 28px;
+  }
+
+  .zaun-description-title {
+    font-size: 20px;
+  }
+
+  .zaun-description {
+    font-size: 16px;
+  }
+}
+
+.container3 {
+  background-blend-mode: darken;
+  background-color: #0009;
+  background-image: url("../zaun-4.9eadcc5a.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.painel {
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  flex: .5;
+  height: 80vh;
+  margin: 10px;
+  transition: flex .7s ease-in;
+  position: relative;
+}
+
+.painel h3 {
+  font-size: 1.5rem;
+}
+
+.painel:active {
+  flex: 5;
+}
+
+.painel.active h3 {
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+
+.text {
+  text-align: center;
+}
+
+@media (width <= 768px) {
+  .container3 {
+    width: 100%;
+    height: 50%;
+  }
+
+  .painel:nth-of-type(4), .painel:nth-of-type(5) {
+    display: none;
+  }
 }
 
 .scrollTop {
