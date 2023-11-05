@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Filter Cards</title>
+</head>
+<body>
+
+<section class="container2">
+  <div class="card-grid">
+
+    <a class="card" href="#">
+      <div class="background" ></div>
+      <div class="content">
+        <p class="category">Category</p>
+        <h3 class="heading">Card Heading</h3>
+      </div>
+    </a>
+
+    <a class="card" href="#">
+      <div class="background" ></div>
+      <div class="content">
+        <p class="category">Category</p>
+        <h3 class="heading">Card Heading</h3>
+      </div>
+    </a>
+
+    <a class="card" href="#">
+      <div class="background"></div>
+      <div class="content">
+        <p class="category">Category</p>
+        <h3 class="heading">Card Heading</h3>
+      </div>
+    </a>
+
+    <a class="card" href="#">
+      <div class="background" ></div>
+      <div class="content">
+        <p class="category">Category</p>
+        <h3 class="heading">Card Heading</h3>
+      </div>
+    </a>
+
+  <div>
+</section>
+
+<button class="scrollTop" id="scrollToTop">
+  <img src="img/icons8-arrow-up-100 (1).png" alt="arrow up">
+</button>
+
+<!-- 
+/* scroll top */
+.scrollTop {
+  outline: none;
+  border: 0;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none; 
+}
+
+.scrollTop img {
+  width: 100%;
+  height: 100%;
+}
+
+.scrollTop.show {
+  display: block; 
+}
+.hidden{
+  display: none;
+}
+/* scroll top end */
+
+ -->
+
+ <!-- 
+const scrollToTopButton = document.querySelector('.scrollTop');
+const rootElement = document.documentElement;
+
+
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
+
+
+window.addEventListener('scroll', () => {
+  if (rootElement.scrollTop > 100) {
+
+    scrollToTopButton.classList.add('show');
+  } else {
+  
+    scrollToTopButton.classList.remove('show');
+  }
+});
+
+
+scrollToTopButton.addEventListener('click', scrollToTop);
+ -->
+</body>
+</html>

@@ -203,6 +203,199 @@ input[type="email"] {
   width: 80%;
 }
 
+.container2 {
+  background-blend-mode: darken;
+  background-color: #0009;
+  background-image: url("../Zaun-02.604be63e.jpeg");
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding: 64px 24px;
+  display: flex;
+}
+
+.card-grid {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+}
+
+@media (width >= 540px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 960px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  position: relative;
+}
+
+.card:before {
+  content: "";
+  width: 100%;
+  padding-bottom: 150%;
+  display: block;
+}
+
+.background1 {
+  filter: brightness(.75) saturate(1.2) contrast(.85);
+  background-image: url("../Arcane Jinx.4a860905.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+  transition: filter .2s linear, transform .2s linear;
+  position: absolute;
+  inset: 0;
+}
+
+.background2 {
+  filter: brightness(.75) saturate(1.2) contrast(.85);
+  background-image: url("../Arcane Vi.94aa264f.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+  transition: filter .2s linear, transform .2s linear;
+  position: absolute;
+  inset: 0;
+}
+
+.background3 {
+  filter: brightness(.75) saturate(1.2) contrast(.85);
+  background-image: url("../ekko.dad99149.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+  transition: filter .2s linear, transform .2s linear;
+  position: absolute;
+  inset: 0;
+}
+
+.background4 {
+  filter: brightness(.75) saturate(1.2) contrast(.85);
+  background-image: url("../Vander Arcane Wallpaper - iXpap.04d142c8.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+  transition: filter .2s linear, transform .2s linear;
+  position: absolute;
+  inset: 0;
+}
+
+.background5 {
+  filter: brightness(.75) saturate(1.2) contrast(.85);
+  background-image: url("../silco.425eafa6.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+  transition: filter .2s linear, transform .2s linear;
+  position: absolute;
+  inset: 0;
+}
+
+.background6 {
+  filter: brightness(.75) saturate(1.2) contrast(.85);
+  background-image: url("../arcane-singed.47f10df1.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+  transition: filter .2s linear, transform .2s linear;
+  position: absolute;
+  inset: 0;
+}
+
+.background7 {
+  filter: brightness(.75) saturate(1.2) contrast(.85);
+  background-image: url("../Twitch.351b888d.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+  transition: filter .2s linear, transform .2s linear;
+  position: absolute;
+  inset: 0;
+}
+
+.background8 {
+  filter: brightness(.75) saturate(1.2) contrast(.85);
+  background-image: url("../warwick.c284822a.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+  transition: filter .2s linear, transform .2s linear;
+  position: absolute;
+  inset: 0;
+}
+
+.card:hover .background {
+  filter: none;
+  transform: scale(1.05);
+}
+
+.card-grid:hover > .card:not(:hover) .background {
+  filter: brightness(.6) saturate() contrast(1.2) blur(5px);
+}
+
+.card-grid:hover > .card:not(:hover) .content {
+  filter: brightness(.8) blur(2px);
+}
+
+.content {
+  padding: 24px;
+  position: absolute;
+  top: 0;
+}
+
+.category {
+  color: #8b6b37;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  font-family: League Gothic, sans-serif;
+  font-size: 3.4rem;
+}
+
+.heading {
+  color: #c0b599;
+  font-family: League Gothic, sans-serif;
+  font-size: 2.4rem;
+}
+
+.scrollTop {
+  cursor: pointer;
+  background-color: #fff;
+  border: 0;
+  border-radius: 50%;
+  outline: none;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.scrollTop img {
+  width: 100%;
+  height: 100%;
+}
+
+.scrollTop.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 @media screen and (width <= 768px) {
   .arc__box {
     padding: 10px;
