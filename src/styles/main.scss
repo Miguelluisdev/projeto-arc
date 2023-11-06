@@ -1,4 +1,7 @@
 @use 'personagem';
+@use 'header';
+@use 'card-grid';
+@use 'slide';
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 
 * {
@@ -14,6 +17,7 @@
 
 ::-webkit-scrollbar{
   width: 10px;
+  display: none;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -21,83 +25,6 @@
   border-radius: 5px;
 }
 
-// header initial
-.container {
-   height: 100vh;
-  width: 100%;
- background-image: url(../images/arcane-header.jpg);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: darken;
-}
-
-.arcane {
-  max-height: 70.938rem;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.718);
-  &_nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height:15rem;
-    font-size: 2.3rem;
-    text-align: center;
-    backdrop-filter: blur(5px);
-  }
-
-  &arc_nav_theme{
-    width: 1.25rem;
-    background-color: rgba(255, 255, 255, 0.773);
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(2px);
-    
-  }
-}
-
-.links{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-  padding: 2rem;
-}
-
-.img-logo {
-  width: 13.5rem;
-}
-
-.img-icon {
-  width: 5rem;
-  height: 5rem;
-  margin-right: 20px;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-.img-icon2 {
-  width: 4rem;
-  height: 5rem;
-  margin-right: 20px;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-
-.img-icon:hover{
-  width: 7rem;
-  height: 7rem;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-.img-icon2:hover{
-  width: 7rem;
-  height: 7rem;
-  margin-right: 20px;
-  margin-left: 20px;
-}
 
 
 .title-big {
@@ -117,80 +44,6 @@
 }
 
 
-.bar {
-  height: 5px;
-  width: 23rem;
-  background-color:#5e4507;
-  margin: 10px 0;
-  box-shadow: 3px solid rgba(255, 255, 255, 0.699);
-  border-radius: 10px;
-}
-
-
-
-.arc__box {
-  backdrop-filter: blur(7px);
-  padding: 20px;
-  max-width: 30rem;
-  background-color: #333e2c67; 
-  border-radius: 5px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 1.2rem ;
-  position: relative;
-  top: 5rem;
-  left: 10rem;
-  right: 5rem;
-  bottom: 0;
-}
-
-input[type="email"] {
-  width: 20rem;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.2); 
-}
-
-.checkbox{
-  width: 20px;
-  height: 20px;
-}
-.btn-arc {
-  background-color: #8b6b37;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-.btn-arc:hover{
-  background: linear-gradient(to right, #8b6b37, #5e4507, rgba(0, 0, 0, 0.762));
-  color: #c0b599;
-  padding: 1.2rem;
-}
-
-.link-a{
-  margin: 10px 10px;
-  padding: 10px 10px;
-  text-decoration: none;
-  text-transform: capitalize;
-  box-shadow: 1px solid rgba(0, 0, 0, 0.675);
-}
-.link-a:hover{
-  color: #5e4507;
-  font-size: 2.5rem;
-  box-shadow: 1px solid rgba(0, 0, 0, 0.675);
-}
-.pags{
-  margin: 1.2rem;
-}
-// header
 
 // zaun introduction
 #zaun-region {
@@ -226,226 +79,6 @@ input[type="email"] {
 // zaun end introduciton
 
 
-// grid cards
-.container2{
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(../images/Zaun-02.jpg);
-  background-size: cover;
-  background-blend-mode: darken;
-  align-items: flex-start;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  padding: 64px 24px;
-
-}
-
-.card-grid{
-  display: grid;
-  grid-column-gap: 24px;
-  grid-row-gap: 24px;
-  max-width: 1200px;
-  width: 100%;
-}
-
-@media(min-width: 540px){
-  .card-grid{
-    grid-template-columns: repeat(2, 1fr); 
-  }
-}
-
-@media(min-width: 960px){
-  .card-grid{
-    grid-template-columns: repeat(4, 1fr); 
-  }
-}
-
-.card{
-  position: relative;
-}
-
-.card:before{
-  content: '';
-  display: block;
-  padding-bottom: 150%;
-  width: 100%;
-}
-
-.background1{
-  background-image: url(../images/Arcane\ Jinx.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) 
-          contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 
-    filter 200ms linear,
-    transform 200ms linear;
-}
-
-
-.background2{
-  background-image: url(../images/Arcane\ Vi.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) 
-          contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 
-    filter 200ms linear,
-    transform 200ms linear;
-}
-
-.background3{
-  background-image: url(../images/ekko.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) 
-          contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 
-    filter 200ms linear,
-    transform 200ms linear;
-}
-
-.background4{
-  background-image: url(../images/Vander\ Arcane\ Wallpaper\ -\ iXpap.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) 
-          contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 
-    filter 200ms linear,
-    transform 200ms linear;
-}
-
-
-.background5{
-  background-image: url(../images/silco.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) 
-          contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 
-    filter 200ms linear,
-    transform 200ms linear;
-}
-
-
-.background6{
-  background-image: url(../images/arcane-singed.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) 
-          contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 
-    filter 200ms linear,
-    transform 200ms linear;
-}
-
-
-.background7{
-  background-image: url(../images/Twitch.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) 
-          contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 
-    filter 200ms linear,
-    transform 200ms linear;
-}
-
-.background8{
-  background-image: url(../images/warwick.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) 
-          contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 
-    filter 200ms linear,
-    transform 200ms linear;
-}
-
-.card:hover .background{
-  transform: scale(1.05);
-  filter: none;
-}
-
-.card-grid:hover > .card:not(:hover) .background{
-  filter: brightness(0.6) saturate(1)
-          contrast(1.2)   blur(5px);
-}
-
-.card-grid:hover > .card:not(:hover) .content{
-  filter: brightness(0.8) blur(2px);
-}
-
-.content{
-  padding: 24px;
-  position: absolute;
-  top: 0;
-}
-
-.category{
-  color: #8b6b37;
-  font-size:3.4rem ;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  letter-spacing: 2;
-  font-family: 'League Gothic', sans-serif;
-}
-
-.heading{
-  color: #c0b599;
-  font-size: 2.4rem;
-  font-family: 'League Gothic', sans-serif;
-}
-// grid cards end
 
 // zaun city
 
@@ -511,7 +144,30 @@ input[type="email"] {
 }
 
 // zaun city
-
+#zaun-region1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+   padding: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/Renata_0.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  backdrop-filter: blur(2px);
+}
+#zaun-region3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+   padding: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.0);
+  background-image: url(../images/lab-quimtec.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  backdrop-filter: blur(2px);
+}
 // people of zaun
 .container3{
   display: flex;
@@ -519,7 +175,7 @@ input[type="email"] {
 background-color: #050505;
 height: 50%;
 background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(../images/zaun-4.jpg);
+  background-image: url(../images/zaun-depths.jpg);
   background-size: cover;
   background-blend-mode: darken;
 

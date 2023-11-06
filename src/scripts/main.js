@@ -53,3 +53,6 @@ function removeActiveClasses(){
         painel.classList.remove('active')
     })
 }
+
+
+
