@@ -55,6 +55,7 @@
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url(../images/zaun.jpg);
   background-size: cover;
+  background-attachment: fixed;
   background-blend-mode: darken;
   backdrop-filter: blur(2px);
 }
@@ -89,10 +90,12 @@
   height: 100%;
   margin: 0 auto;
   font-family: 'League Gothic', sans-serif;
-  background-color: rgba(0, 0, 0, 0.922);
-  
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.518);
+  background-attachment: fixed;
+  background-position: center;
   background-blend-mode: darken;
+  background-image: url(../images/arcane-jinx-lol-skin-splash-art-hd-wallpaper-uhdpaper.com-16@1@e.jpg);
 }
 
 .zaun-title {
@@ -178,7 +181,7 @@ background-color: rgba(0, 0, 0, 0.6);
   background-image: url(../images/zaun-depths.jpg);
   background-size: cover;
   background-blend-mode: darken;
-
+  background-attachment: fixed;
 }
 
 .painel{

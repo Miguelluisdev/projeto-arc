@@ -214,6 +214,7 @@ input[type="email"] {
   background-color: #0009;
   background-image: url("../Zaun-02.604be63e.jpeg");
   background-size: cover;
+  background-attachment: fixed;
   justify-content: center;
   align-items: flex-start;
   height: 100%;
@@ -419,6 +420,7 @@ input[type="email"] {
   background-color: #0009;
   background-image: url("../zaun.677ac67d.jpeg");
   background-size: cover;
+  background-attachment: fixed;
   flex-direction: column;
   align-items: center;
   padding: 1.25rem;
@@ -445,8 +447,11 @@ input[type="email"] {
 .zaun-section {
   text-align: center;
   background-blend-mode: darken;
-  background-color: #000000eb;
+  background-color: #00000036;
+  background-image: url("../arcane-jinx-lol-skin-splash-art-hd-wallpaper-uhdpaper.com-16@1@e.95cdb216.jpeg");
+  background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -534,6 +539,7 @@ input[type="email"] {
   background-color: #0009;
   background-image: url("../zaun-depths.749cff4e.jpeg");
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 50%;
   display: flex;
