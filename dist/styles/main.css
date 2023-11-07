@@ -214,7 +214,6 @@ input[type="email"] {
   background-color: #0009;
   background-image: url("../Zaun-02.604be63e.jpeg");
   background-size: cover;
-  background-attachment: fixed;
   justify-content: center;
   align-items: flex-start;
   height: 100%;
@@ -375,11 +374,408 @@ input[type="email"] {
   font-size: 2.4rem;
 }
 
+.game {
+  text-align: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.game__firstScreen {
+  background-blend-mode: darken;
+  background-color: #00000035;
+  background-image: url("../ekko-vsjinx.d9350ee4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  margin-top: 20px;
+  display: flex;
+}
+
+.game__firstScreen img {
+  width: 40%;
+  margin-top: 10px;
+}
+
+.game__firstScreen button {
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(to right, #8b0000, #654321, #006400);
+  border: none;
+  border-radius: 10px;
+  width: 115px;
+  height: 25px;
+  margin-bottom: 2.3rem;
+  font-size: 1.6rem;
+}
+
+@media (width >= 744px) {
+  .game__firstScreen {
+    height: 400px;
+    margin-top: 40px;
+  }
+
+  .game__firstScreen img {
+    width: 331px;
+    margin-top: 35px;
+  }
+
+  .game__firstScreen button {
+    background: linear-gradient(to right, #8b0000, #654321, #006400);
+    width: 262px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 2.3rem;
+    font-size: 2.4rem;
+  }
+}
+
+@media (width >= 1044px) {
+  .game__firstScreen {
+    height: 700px;
+  }
+
+  .game__firstScreen img {
+    width: 40%;
+    margin-top: 40px;
+  }
+
+  .game__firstScreen button {
+    background: linear-gradient(to right, #8b0000, #654321, #006400);
+    width: 509px;
+    height: 63px;
+    margin-top: 15px;
+    margin-bottom: 2.3rem;
+    font-size: 3.6rem;
+  }
+}
+
+.game__secondScreen {
+  background: linear-gradient(to right, #8b0000, #654321, #006400);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  display: none;
+}
+
+.game__secondScreen img {
+  width: 75%;
+  margin-bottom: 16px;
+}
+
+.game__secondScreen span {
+  font-size: 2rem;
+}
+
+@media (width >= 744px) {
+  .game__secondScreen {
+    height: 400px;
+    margin-top: 40px;
+  }
+
+  .game__secondScreen span {
+    font-size: 2.5rem;
+  }
+}
+
+@media (width >= 1044px) {
+  .game__secondScreen {
+    height: 700px;
+  }
+
+  .game__secondScreen span {
+    font-size: 3.2rem;
+  }
+}
+
+.game__bind {
+  background-color: #435e64;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  display: none;
+}
+
+.game__bind button {
+  color: #fff;
+  background: linear-gradient(to right, #8b0000, #654321, #006400);
+  border: #0000;
+  border-radius: 8px;
+  width: 100px;
+  height: 20px;
+  font-size: 1.4rem;
+}
+
+@media (width >= 744px) {
+  .game__bind {
+    height: 400px;
+    margin-top: 40px;
+  }
+
+  .game__bind button {
+    width: 200px;
+    height: 40px;
+    font-size: 2.4rem;
+  }
+}
+
+@media (width >= 1044px) {
+  .game__bind {
+    height: 700px;
+  }
+
+  .game__bind button {
+    background: linear-gradient(to right, #8b0000, #654321, #006400);
+    width: 350px;
+    height: 50px;
+    font-size: 2.8rem;
+  }
+}
+
+.game__thirdScreen {
+  background-color: #435e64;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  display: none;
+}
+
+.game__thirdScreen__personagens {
+  align-items: center;
+  gap: 25px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.game__thirdScreen__personagens img {
+  width: 50px;
+  height: 35px;
+}
+
+.game__thirdScreen__personagens .personagem {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.game__thirdScreen__personagens .personagem img {
+  width: 101px;
+  height: 80px;
+}
+
+.game__thirdScreen__personagens .personagem h4 {
+  font-size: 1.6rem;
+}
+
+.game__thirdScreen__personagens .personagem table td {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (width >= 744px) {
+  .game__thirdScreen {
+    height: 400px;
+    margin-top: 40px;
+  }
+
+  .game__thirdScreen__personagens img {
+    width: 100px;
+    height: 70px;
+  }
+
+  .game__thirdScreen__personagens .personagem img {
+    width: 202px;
+    height: 160px;
+  }
+
+  .game__thirdScreen__personagens .personagem h4, .game__thirdScreen__personagens .personagem table {
+    font-size: 2rem;
+  }
+
+  .game__thirdScreen__personagens .personagem table td {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media (width >= 1044px) {
+  .game__thirdScreen {
+    height: 700px;
+  }
+
+  .game__thirdScreen__personagens img {
+    width: 200px;
+    height: 140px;
+  }
+
+  .game__thirdScreen__personagens .personagem img {
+    width: 404px;
+    height: 320px;
+  }
+
+  .game__thirdScreen__personagens .personagem h4, .game__thirdScreen__personagens .personagem table {
+    font-size: 2.4rem;
+  }
+
+  .game__thirdScreen__personagens .personagem table td {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media (width >= 744px) {
+  .game {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+#resultado {
+  font-size: 2rem;
+}
+
+@media (width >= 744px) {
+  #resultado {
+    font-size: 3rem;
+  }
+}
+
+.container3 {
+  background-blend-mode: darken;
+  background-color: #0009;
+  background-image: url("../zaun-depths.749cff4e.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.painel {
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  flex: .5;
+  height: 80vh;
+  margin: 10px;
+  transition: flex .7s ease-in;
+  position: relative;
+}
+
+.painel h3 {
+  font-size: 1.5rem;
+}
+
+.painel:active {
+  flex: 5;
+}
+
+.painel.active h3 {
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+
+.text {
+  text-align: center;
+}
+
+@media (width <= 768px) {
+  .container3 {
+    width: 100%;
+    height: 50%;
+  }
+
+  .painel:nth-of-type(4), .painel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+.zaun-section {
+  text-align: center;
+  background-blend-mode: darken;
+  background-color: #00000084;
+  background-image: url("../arcane-jinx-lol-skin-splash-art-hd-wallpaper-uhdpaper.com-16@1@e.95cdb216.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: League Gothic, sans-serif;
+}
+
+.zaun-title {
+  font-family: League Gothic, sans-serif;
+  font-size: 3.4rem;
+}
+
+.slider-container {
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.slider {
+  transition: transform .5s;
+  display: flex;
+}
+
+.slider img {
+  width: 50%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.zaun-description-title {
+  font-size: 3.4rem;
+}
+
+.zaun-description {
+  font-size: 2.4rem;
+}
+
+@media screen and (width <= 768px) {
+  .zaun-section {
+    padding: 10px;
+  }
+
+  .zaun-title {
+    font-size: 28px;
+  }
+
+  .zaun-description-title {
+    font-size: 20px;
+  }
+
+  .zaun-description {
+    font-size: 16px;
+  }
+}
+
 * {
   box-sizing: border-box;
   color: #c0b599;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #000;
 }
 
 :root {
@@ -444,75 +840,13 @@ input[type="email"] {
   width: 80%;
 }
 
-.zaun-section {
-  text-align: center;
-  background-blend-mode: darken;
-  background-color: #00000036;
-  background-image: url("../arcane-jinx-lol-skin-splash-art-hd-wallpaper-uhdpaper.com-16@1@e.95cdb216.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: League Gothic, sans-serif;
-}
-
-.zaun-title {
-  font-family: League Gothic, sans-serif;
-  font-size: 3.4rem;
-}
-
-.slider-container {
-  margin: 20px 0;
-  overflow: hidden;
-}
-
-.slider {
-  transition: transform .5s;
-  display: flex;
-}
-
-.slider img {
-  width: 50%;
-  height: auto;
-  margin-right: 10px;
-}
-
-.zaun-description-title {
-  font-size: 3.4rem;
-}
-
-.zaun-description {
-  font-size: 2.4rem;
-}
-
-@media screen and (width <= 768px) {
-  .zaun-section {
-    padding: 10px;
-  }
-
-  .zaun-title {
-    font-size: 28px;
-  }
-
-  .zaun-description-title {
-    font-size: 20px;
-  }
-
-  .zaun-description {
-    font-size: 16px;
-  }
-}
-
 #zaun-region1 {
   text-align: center;
   background-blend-mode: darken;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-  background-color: #0009;
-  background-image: url("../Renata_0.912194dc.jpeg");
+  background-image: url("../renata-bsron.49fa70d5.jpeg");
+  background-position: center;
   background-size: cover;
   flex-direction: column;
   align-items: center;
@@ -532,57 +866,6 @@ input[type="email"] {
   align-items: center;
   padding: 1.25rem;
   display: flex;
-}
-
-.container3 {
-  background-blend-mode: darken;
-  background-color: #0009;
-  background-image: url("../zaun-depths.749cff4e.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 50%;
-  display: flex;
-}
-
-.painel {
-  cursor: pointer;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  flex: .5;
-  height: 80vh;
-  margin: 10px;
-  transition: flex .7s ease-in;
-  position: relative;
-}
-
-.painel h3 {
-  font-size: 1.5rem;
-}
-
-.painel:active {
-  flex: 5;
-}
-
-.painel.active h3 {
-  opacity: 1;
-  transition: opacity 2s ease-in;
-}
-
-.text {
-  text-align: center;
-}
-
-@media (width <= 768px) {
-  .container3 {
-    width: 100%;
-    height: 50%;
-  }
-
-  .painel:nth-of-type(4), .painel:nth-of-type(5) {
-    display: none;
-  }
 }
 
 .scrollTop {

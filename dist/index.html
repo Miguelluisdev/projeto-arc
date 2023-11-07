@@ -61,7 +61,7 @@
         </div>
 
         <div class="description-zaun" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-            <p class="text-zaun title--medium">Zaun é um grande distrito subterrâneo, aos pés de cânions profundos e vales que cortam Piltover. A pouca luz que chega lá é filtrada pelas fumaças que saem dos emaranhados de canos corroídos e refletem do vidro manchado de sua arquitetura industrial. Zaun e Piltover já foram unidas, mas agora são sociedades simbióticas, mas separadas. Apesar de existir no crepúsculo perpétuo da poluição, Zaun prospera com seu povo vibrante e sua rica cultura. A riqueza de Piltover permitiu que Zaun se desenvolvesse em paralelo; um espelho escuro da cidade acima. Muitas das mercadorias que chegam a Piltover acabam entrando no mercado clandestino de Zaun, e os inventores hextec que consideram que as restrições impostas na cidade acima são muito rígidas descobrem que suas pesquisas perigosas são bem-vindas em Zaun. O desenvolvimento desenfreado de tecnologias voláteis e da indústria imprudente fez com que as extensões de Zaun ficassem poluídas e perigosas. Correntes de derramamento tóxico estagnaram nas partes mais baixas da cidade, mas mesmo aqui as pessoas encontram maneiras de existir e prosperar.
+            <p class="text-zaun title--medium">Zaun é um grande distrito subterrâneo, aos pés de cânions profundos e vales que cortam Piltover. A pouca luz que chega lá é filtrada pelas fumaças que saem dos emaranhados de canos corroídos e refletem do vidro manchado de sua arquitetura industrial. Zaun e Piltover já foram unidas, mas agora são sociedades simbióticas, mas separadas. Apesar de existir no crepúsculo perpétuo da poluição, Zaun prospera com seu povo vibrante e sua rica cultura. A riqueza de Piltover permitiu que Zaun se desenvolvesse em paralelo; um espelho escuro da cidade acima. Muitas das mercadorias que chegam a Piltover acabam entrando no mercado clandestino de Zaun, e os inventores hextec que consideram que as restrições impostas na cidade acima são muito rígidas descobrem que suas pesquisas perigosas são bem-vindas em Zaun. O desenvolvimento desenfreado de tecnologias voláteis e da indústria imprudente fez com que as extensões de Zaun ficassem poluídas e perigosas. Correntes de derramamento tóxico estagnaram nas partes mais baixas da cidade, mas mesmo aqui as pessoas encontram maneiras de existir e prosperar. Logo abaixo uma breve apresentação dos protagosnistas que vivem nessa cidade
         </p></div>
         <img src="/t1HeaderDivider.777d550a.png" alt="" width="100%">
     </section>
@@ -153,6 +153,8 @@
             <img src="/Zaun-02.604be63e.jpeg" alt="Zaun Image 4">
             <img src="/Fun%20Where%20They%20Run_%20Creating%20Zaun%20in%20a%20CG.9a660768.jpeg" alt="Zaun Image 5">
             <img src="/Vi%20violet%20Arcane%20wallpaper%20_3.907d63fa.jpeg" alt="zaun image 6">
+            <img src="/Jinx-Piltover-and-Zaun-LoR.5e1e1426.jpeg" alt="zaun image 7">
+            <img src="/Lor-Zaun%20and%20Piltover,%20Jayison%20Devadas.20c56554.jpeg" alt="zaun image 8">
         </div>
     </div>
 
@@ -213,12 +215,7 @@
         
         Barão Petrok Grime
         Grime perdeu os seus dois braços em uma explosão em uma de suas refinarias químicas. Apesar, ou talvez por causa disso, seu estoque quimtec tem algumas das misturas mais procuradas.
-        
-        Barão Saita Takeda
-        Takeda não faz segredo do seu desdém contra outros Barões da Química. Alegando ser de uma linhagem de uma casta exilada de guerreiros de uma terra distante, ele tem planos para muito além dos seus territórios e interesses.
-        
-        Barão Wencher Spindlaw
-        Outrora um tenente inferior, Spindlaw assassinou seu chefe e tomou seu império. Armado com um par de bastões de choque, ele é um assassino sem piedade que vê o assassinato e o caos como ossos do ofício.
+    
   </p></div>
   <img src="/t1HeaderDivider.777d550a.png" alt="" width="100%">
 </section>
@@ -242,6 +239,90 @@ A Quimtec é uma forma alternativa e mais arriscada de alcançar avanços tecnol
 </p></div>
 </section>
 <!-- quimtec end -->
+
+<!-- game -->
+<section class="game-container">
+  
+  <div class="game__firstScreen" id="firstScreen">
+    <h4 class="title-big">Sorteie um personagem para ver se a Jinx ganha</h4> 
+      <img src="/jinx-game.dbebfc72.png" alt="jinx">
+      <button id="sortear">SORTEAR</button>
+  </div>
+
+  <div class="game__secondScreen" id="secondScreen">
+      <img src="/gif-jinx-site.71105e4a.gif" alt="carregando">
+      <span>PROCURANDO POR UM OPONENTE A SUA ALTURA</span>
+  </div>
+
+  <div class="game__bind" id="telaAposta">
+      <div class="game__thirdScreen__personagens">
+          <div class="personagem" id="jinx">
+              <img src="/jinx-game2.c76a5034.png" alt="jinx">
+              <h4 class="title-big">JINX</h4>
+              <button id="apostaDefault">APOSTAR</button>
+          </div>
+
+          <img src="/VS-PNG.7f2f489c.png" alt="">
+
+          <div class="personagem" id="oponente">
+              <img id="imagemOponente" src="/vi-arcane.f7629d15.png" alt="oponente">
+              <h4 class="title-big" id="nomeOponente">VI</h4>
+              <button id="apostaRandom">APOSTAR</button>
+          </div>
+      </div>
+  </div>
+
+  <div class="game__thirdScreen" id="thirdScreen">
+      <div style="align-items: center; gap: 15px; display: flex">
+          <span id="resultado">...</span> <button id="restart">RESTART</button>
+      </div>
+      <div class="game__thirdScreen__personagens">
+          <div class="personagem">
+              <img src="/jinx-game2.c76a5034.png" alt="jinx">
+              <h4 class="title-big">JINX</h4>
+              <table>
+                  <tr>
+                      <td>Força</td>
+                      <td id="forcaJinx">75</td>
+                  </tr>
+                  <tr>
+                      <td>Agilidade</td>
+                      <td id="agilidadeJinx">90</td>
+                  </tr>
+                  <tr>
+                      <td>Resistencia</td>
+                      <td id="ResJinx">95</td>
+                  </tr>
+              </table>
+          </div>
+
+          <img src="/VS-PNG.7f2f489c.png" alt="versus">
+
+          <div class="personagem" id="oponente">
+              <img id="imagemOponente2" src="/vi-arcane.f7629d15.png" alt="oponente">
+              <h4 class="title-big" id="nomeOponenteRes">VI</h4>
+              <table>
+                  <tr>
+                      <td>Força</td>
+                      <td id="forcaOponente">75</td>
+                  </tr>
+                  <tr>
+                      <td>Agilidade</td>
+                      <td id="agilidadeOponente">90</td>
+                  </tr>
+                  <tr>
+                      <td>Resistencia</td>
+                      <td id="resistenciaOponente">95</td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- game end -->
+
+<!-- footer  -->
+<!-- footer end -->
 
 <!-- scroll-top-btn -->
     <button class="scrollTop" id="scrollToTop">

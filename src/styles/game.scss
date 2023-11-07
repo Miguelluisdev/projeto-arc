@@ -1,0 +1,280 @@
+
+.game{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+
+  &__firstScreen{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      width: 100%;
+      height: 50%;
+      flex-direction: column;
+      background-image: url(../images/ekko-vsjinx.jpg);
+      background-size: cover;
+      background-blend-mode: darken;
+      background-repeat: no-repeat;
+      background-color: rgba(0, 0, 0, 0.207);
+
+      img{
+          width: 40%;
+          margin-top: 10px;
+      }
+
+      button{
+          width: 115px;
+          height: 25px;
+          border-radius: 10px;
+          font-size: 1.6rem;
+          border: none;
+          background: linear-gradient(to right, #8B0000,#654321,#006400);
+          color: white;
+          cursor: pointer;
+          margin-bottom: 2.3rem;
+      }
+
+      @media (min-width: 744px){
+          margin-top: 40px;
+          height: 400px;
+
+          img{
+              width: 331px;
+              margin-top: 35px;
+          }
+
+          button{
+              width: 262px;
+              height: 40px;
+              font-size: 2.4rem;
+              margin-top: 15px;
+              margin-bottom: 2.3rem;
+              background: linear-gradient(to right, #8B0000,#654321,#006400);
+          }
+      }
+
+      @media (min-width: 1044px){
+          height: 700px;
+
+          img{
+              width: 40%;
+              margin-top: 40px;
+          }
+
+          button{
+              width: 509px;
+              height: 63px;
+              font-size: 3.6rem;
+              margin-top: 15px;
+              margin-bottom: 2.3rem;
+              background: linear-gradient(to right, #8B0000,#654321,#006400);
+          }
+      }
+  }
+
+  &__secondScreen{
+      margin-top: 20px;
+      width: 100%;
+      height: 200px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, #8B0000,#654321,#006400);
+
+      img{
+          width: 75%;
+          margin-bottom: 16px;
+      }
+
+      span{
+          font-size: 2rem;
+      }
+
+      @media (min-width: 744px){
+          margin-top: 40px;
+          height: 400px;
+
+          span{
+              font-size: 2.5rem;
+          }
+      }
+
+      @media (min-width: 1044px){
+          height: 700px;
+
+          span{
+              font-size: 3.2rem;
+          }
+      }        
+  }
+
+  &__bind{
+      margin-top: 20px;
+      width: 100%;
+      height: 200px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #435E64;
+
+      button{
+          width: 100px;
+          height: 20px;
+          font-size: 1.4rem;
+          color: white;
+          background: linear-gradient(to right, #8B0000,#654321,#006400);
+          border-radius: 8px;
+          border: transparent;
+      }
+
+      @media (min-width: 744px){
+          margin-top: 40px;
+          height: 400px;
+
+          button{
+              width: 200px;
+              height: 40px;
+              font-size: 2.4rem;
+          }
+      }
+
+      @media (min-width: 1044px){
+          height: 700px;
+
+          button{
+              width: 350px;
+              height: 50px;
+              font-size: 2.8rem;
+              background: linear-gradient(to right, #8B0000,#654321,#006400);
+          }
+      }
+  }
+
+  &__thirdScreen{
+      margin-top: 20px;
+      width: 100%;
+      height: 200px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #435E64;
+
+      &__personagens{
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          margin-top: 10px;
+
+          img{
+              width: 50px;
+              height: 35px;
+          }
+
+          .personagem{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              img{
+                  height: 80px;
+                  width: 101px;
+              }
+
+              h4{
+                  font-size: 1.6rem;
+              }
+
+              table{
+                  td{
+                      padding-right: 12px;
+                      padding-left: 12px;
+                  }
+              }
+          }
+      }
+
+      @media (min-width: 744px){
+          margin-top: 40px;
+          height: 400px;
+
+          &__personagens{
+  
+              img{
+                  width: 100px;
+                  height: 70px;
+              }
+  
+              .personagem{
+                  img{
+                      height: 160px;
+                      width: 202px;
+                  }
+  
+                  h4{
+                      font-size: 2rem;
+                  }
+  
+                  table{
+                      font-size: 2rem;
+                      td{
+                          padding-right: 12px;
+                          padding-left: 12px;
+                      }
+                  }
+              }
+          }
+      }
+
+      @media (min-width: 1044px){
+          height: 700px;
+
+          &__personagens{
+  
+              img{
+                  width: 200px;
+                  height: 140px;
+              }
+  
+              .personagem{
+                  img{
+                      height: 320px;
+                      width: 404px;
+                  }
+  
+                  h4{
+                      font-size: 2.4rem;
+                  }
+  
+                  table{
+                      font-size: 2.4rem;
+                      td{
+                          padding-right: 12px;
+                          padding-left: 12px;
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  @media (min-width: 744px){
+      margin-top: 50px;
+      margin-bottom: 100px;
+  }
+
+}
+
+
+#resultado{
+  font-size: 2rem;
+
+  @media (min-width: 744px){
+      font-size: 3rem;
+  }
+}
+
