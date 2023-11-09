@@ -78,7 +78,7 @@
   &__secondScreen{
       margin-top: 20px;
       width: 100%;
-      height: 200px;
+      height: 300px;
       display: none;
       flex-direction: column;
       align-items: center;
@@ -115,7 +115,7 @@
   &__bind{
       margin-top: 20px;
       width: 100%;
-      height: 200px;
+      height: 300px;
       display: none;
       flex-direction: column;
       align-items: center;
@@ -124,6 +124,9 @@
       background-position: center center;
       background-repeat:  no-repeat;
       background-size: cover;
+      background-blend-mode: darken;
+      background-color: rgba(0, 0, 0, 0.529);
+
 
       button{
           width: 100px;
@@ -162,12 +165,18 @@
   &__thirdScreen{
       margin-top: 20px;
       width: 100%;
-      height: 200px;
+      height: 300px;
       display: none;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: #435E64;
+      background-image: url(../images/jinx-vs-vi.jpg);
+      background-position: center center;
+      background-repeat:  no-repeat;
+      background-size: cover;
+      background-blend-mode: darken;
+      background-color: rgba(0, 0, 0, 0.529);
+
 
       &__personagens{
           display: flex;
@@ -276,6 +285,7 @@
   @media (min-width: 744px){
       margin-top: 50px;
       margin-bottom: 100px;
+     
   }
 
 }

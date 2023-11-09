@@ -40,10 +40,10 @@ sortear.addEventListener("click", () => {
     nomeOponent.textContent = oponentRandom.nome
 
  apostaDefault.addEventListener("click", () => {
-  //  aqui vai function que compara os persona
+
   telaAposta.style.display = "none"
   thirdScreen.style.display = "flex"
-
+  comparacao(JinxPlay, oponentRandom)
 // poder oponente
 
     forcaOponente.innerText = oponentRandom.forca;
@@ -61,9 +61,13 @@ sortear.addEventListener("click", () => {
   });
   
    apostaRandom.addEventListener("click", () => {
+
+
         telaAposta.style.display = "none"
         thirdScreen.style.display = "flex"
-        // comparação
+
+        comparacao(JinxPlay, oponentRandom)
+
         forcaOponente.innerText = oponentRandom.forca;
         agilidadeOponente.innerText = oponentRandom.agilidade;
         resistenciaOponente.innerText = oponentRandom.resistencia;
@@ -76,14 +80,54 @@ sortear.addEventListener("click", () => {
       });
   
 
-}, 3000)
-
-
-
-  
+    }, 3000);
 })
 
 
+let score1 = 0
+let score2 = 0
+function comparacao(personagemApostado,personagem2){
+
+  if( personagemApostado.forca > personagem2.forca ){
+    score1++;
+   
+
+  } else if (personagem2.forca > personagemApostado.forca){
+    score2++;
+    
+  }
+
+  if(personagemApostado.agilidade > personagem2.agilidade){
+    score1++;
+    
+  } else if (personagem2.agilidade > personagemApostado.agilidade){
+    score2++;
+    
+  }
+
+  if(personagemApostado.resistencia > personagem2.resistencia){
+    score1++;
+    
+  } else if (personagem2.resistencia > personagemApostado.resistencia){
+    score2++;
+    
+  }
+
+
+  if (score1 > score2){
+    resultado.textContent = "Você Ganhou!!!!!!"
+  } else {
+    resultado.textContent = "Você perdeu!!!!!!"
+  }
+} 
+
+restart.addEventListener("click", ( ) => {
+  score1 = 0
+  score2 = 0
+  
+  thirdScreen.style.display = "none"
+  firstScreen.style.display = "flex"
+})
 
 
 // scroll top
