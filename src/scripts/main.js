@@ -44,12 +44,39 @@ sortear.addEventListener("click", () => {
   telaAposta.style.display = "none"
   thirdScreen.style.display = "flex"
 
+// poder oponente
 
-    forcaOponente.textContent = oponentRandom.força
+    forcaOponente.innerText = oponentRandom.forca;
+    agilidadeOponente.innerText = oponentRandom.agilidade;
+    resistenciaOponente.innerText = oponentRandom.resistencia;
+    nomeOponentRes.innerText = oponentRandom.nome;
+    profileOponent2.setAttribute("src", oponentRandom.profile);
+
+  //  pdoer jinx
+
+    forcaJinx.innerText = JinxPlay.forca
+    agilidadeJinx.innerText = JinxPlay.agilidade
+    resjinx.innerText = JinxPlay.resistencia
+
+  });
+  
+   apostaRandom.addEventListener("click", () => {
+        telaAposta.style.display = "none"
+        thirdScreen.style.display = "flex"
+        // comparação
+        forcaOponente.innerText = oponentRandom.forca;
+        agilidadeOponente.innerText = oponentRandom.agilidade;
+        resistenciaOponente.innerText = oponentRandom.resistencia;
+        nomeOponentRes.innerText = oponentRandom.nome;
+        profileOponent2.setAttribute("src", oponentRandom.profile);
+  
+        forcaJinx.innerText = JinxPlay.forca
+        agilidadeJinx.innerText = JinxPlay.agilidade
+        resjinx.innerText = JinxPlay.resistencia
+      });
   
 
-})
-  }, 3000)
+}, 3000)
 
 
 
