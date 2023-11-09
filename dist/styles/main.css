@@ -497,7 +497,10 @@ input[type="email"] {
 }
 
 .game__bind {
-  background-color: #435e64;
+  background-image: url("../ekko-jinx.46296a64.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -509,6 +512,7 @@ input[type="email"] {
 
 .game__bind button {
   color: #fff;
+  cursor: pointer;
   background: linear-gradient(to right, #8b0000, #654321, #006400);
   border: #0000;
   border-radius: 8px;

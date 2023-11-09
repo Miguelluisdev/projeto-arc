@@ -120,7 +120,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: #435E64;
+      background-image: url(../images/ekko-jinx.jpg);
+      background-position: center center;
+      background-repeat:  no-repeat;
+      background-size: cover;
 
       button{
           width: 100px;
@@ -130,6 +133,7 @@
           background: linear-gradient(to right, #8B0000,#654321,#006400);
           border-radius: 8px;
           border: transparent;
+          cursor: pointer;
       }
 
       @media (min-width: 744px){

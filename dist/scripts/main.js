@@ -575,6 +575,46 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"3cYfC":[function(require,module,exports) {
+var _personagensJs = require("./personagens.js");
+// game
+const sortear = document.getElementById("sortear");
+const firstScreen = document.getElementById("firstScreen");
+const secondScreen = document.getElementById("secondScreen");
+const telaAposta = document.getElementById("telaAposta");
+const thirdScreen = document.getElementById("thirdScreen");
+let oponente = document.getElementById("oponente");
+let profileOponent = document.getElementById("imagemOponente");
+let profileOponent2 = document.getElementById("imagemOponente2");
+let nomeOponent = document.getElementById("nomeOponente");
+let nomeOponentRes = document.getElementById("nomeOponenteRes");
+const jinxed = document.getElementById("jinx");
+const apostaRandom = document.getElementById("apostaRandom");
+const apostaDefault = document.getElementById("apostaDefault");
+let forcaOponente = document.getElementById("forcaOponente");
+let agilidadeOponente = document.getElementById("agilidadeOponente");
+let resistenciaOponente = document.getElementById("resistenciaOponente");
+let forcaJinx = document.getElementById("forcaJinx");
+let agilidadeJinx = document.getElementById("agilidadeJinx");
+let resjinx = document.getElementById("ResJinx");
+const resultado = document.getElementById("resultado");
+const restart = document.getElementById("restart");
+sortear.addEventListener("click", ()=>{
+    firstScreen.style.display = "none";
+    secondScreen.style.display = "flex";
+    const personaRandom = Math.floor(Math.random() * (0, _personagensJs.personagem).length);
+    const oponentRandom = (0, _personagensJs.personagem)[personaRandom];
+    setTimeout(()=>{
+        secondScreen.style.display = "none";
+        telaAposta.style.display = "flex";
+        profileOponent.setAttribute("src", oponentRandom.profile);
+        nomeOponent.textContent = oponentRandom.nome;
+        apostaDefault.addEventListener("click", ()=>{
+            //  aqui vai function que compara os persona
+            telaAposta.style.display = "none";
+            thirdScreen.style.display = "flex";
+        });
+    }, 3000);
+});
 // scroll top
 const scrollToTopButton = document.querySelector(".scrollTop");
 const rootElement = document.documentElement;
@@ -599,6 +639,7 @@ function slideImage() {
     slider.style.transform = `translateX(${offset}%)`;
 }
 setInterval(slideImage, 5000);
+// painel
 const paineis = document.querySelectorAll(".painel");
 paineis.forEach((painel)=>{
     painel.addEventListener("click", ()=>{
@@ -611,6 +652,72 @@ function removeActiveClasses() {
         painel.classList.remove("active");
     });
 }
+
+},{"./personagens.js":"5P2Pz"}],"5P2Pz":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "personagem", ()=>personagem);
+parcelHelpers.export(exports, "JinxPlay", ()=>JinxPlay);
+const JinxPlay = {
+    nome: "Jinx",
+    forca: Math.floor(Math.random() * 75 + 25),
+    agilidade: Math.floor(Math.random() * 100 + 25),
+    resistencia: Math.floor(Math.random() * 50 + 25),
+    profile: "https://cdn.discordapp.com/attachments/1151211352958959826/1172230399959781457/jinx-game2.png?ex=655f8fa2&is=654d1aa2&hm=7d8728893710d800490a7b657e63be819b77117f0637a2cab7006d43c1d97159&"
+};
+const personagem = [
+    {
+        nome: "Vi",
+        "for\xe7a": Math.floor(Math.random() * 100 + 25),
+        agilidade: Math.floor(Math.random() * 85 + 10),
+        resistencia: Math.floor(Math.random() * 90 + 10 + 25),
+        profile: "https://cdn.discordapp.com/attachments/1151211352958959826/1172237451880833104/vi-arcane.png?ex=655f9633&is=654d2133&hm=9b8e0761143f3a0905b1f1fc1b805f2083b918582cdc66b3c6d518898264e4ab&"
+    },
+    {
+        nome: "Jayce",
+        "for\xe7a": Math.floor(Math.random() * 90 + 10),
+        agilidade: Math.floor(Math.random() * 85 + 10),
+        resistencia: Math.floor(Math.random() * 85 + 25),
+        profile: "https://cdn.discordapp.com/attachments/1151211352958959826/1172238817969832058/jayce.png?ex=655f9779&is=654d2279&hm=2c39dec43f7b5b2209a846c8ef594c9e41c0bc4c02e309a52f8cdda38f241a17&"
+    },
+    {
+        nome: "Ekko",
+        "for\xe7a": Math.floor(Math.random() * 90 + 10),
+        agilidade: Math.floor(Math.random() * 100 + 25),
+        resistencia: Math.floor(Math.random() * 90 + 10),
+        profile: "https://cdn.discordapp.com/attachments/1151211352958959826/1172243211947888640/ekko_png.png?ex=655f9b90&is=654d2690&hm=ff264d24cba5e511fb19b8f68c30637f45554fe58ea9543f7abf3d4dc01668c4&"
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
 },{}]},["l1XHo","3cYfC"], "3cYfC", "parcelRequire933b")
 
