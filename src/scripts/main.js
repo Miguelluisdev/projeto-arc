@@ -45,7 +45,7 @@ sortear.addEventListener("click", () => {
   thirdScreen.style.display = "flex"
 
 
-
+    forcaOponente.textContent = oponentRandom.força
   
 
 })
