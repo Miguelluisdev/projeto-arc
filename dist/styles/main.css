@@ -641,6 +641,13 @@ input[type="email"] {
   }
 }
 
+.game #restart {
+  background: linear-gradient(to right, #8b0000, #654321, #006400);
+  width: 350px;
+  height: 50px;
+  font-size: 2.8rem;
+}
+
 @media (width >= 744px) {
   .game {
     margin-top: 50px;
