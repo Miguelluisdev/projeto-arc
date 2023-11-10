@@ -25,7 +25,8 @@ const resultado = document.getElementById("resultado")
 const restart = document.getElementById("restart")
 
 
-sortear.addEventListener("click", () => {
+sortear.addEventListener("click", async () => {
+  
   firstScreen.style.display = "none";
   secondScreen.style.display = "flex";
 
@@ -39,12 +40,12 @@ sortear.addEventListener("click", () => {
     profileOponent.setAttribute("src", oponentRandom.profile)
     nomeOponent.textContent = oponentRandom.nome
 
- apostaDefault.addEventListener("click", () => {
+ apostaDefault.addEventListener("click",async () => {
 
+
+  await comparacao(JinxPlay, oponentRandom)
   telaAposta.style.display = "none"
   thirdScreen.style.display = "flex"
-  comparacao(JinxPlay, oponentRandom)
-// poder oponente
 
     forcaOponente.innerText = oponentRandom.forca;
     agilidadeOponente.innerText = oponentRandom.agilidade;
@@ -52,22 +53,20 @@ sortear.addEventListener("click", () => {
     nomeOponentRes.innerText = oponentRandom.nome;
     profileOponent2.setAttribute("src", oponentRandom.profile);
 
-  //  pdoer jinx
-
     forcaJinx.innerText = JinxPlay.forca
     agilidadeJinx.innerText = JinxPlay.agilidade
     resjinx.innerText = JinxPlay.resistencia
 
   });
   
-   apostaRandom.addEventListener("click", () => {
+   apostaRandom.addEventListener("click", async () => {
 
+
+   await  comparacao(JinxPlay, oponentRandom)
 
         telaAposta.style.display = "none"
         thirdScreen.style.display = "flex"
-
-        comparacao(JinxPlay, oponentRandom)
-
+        
         forcaOponente.innerText = oponentRandom.forca;
         agilidadeOponente.innerText = oponentRandom.agilidade;
         resistenciaOponente.innerText = oponentRandom.resistencia;
@@ -84,51 +83,46 @@ sortear.addEventListener("click", () => {
 })
 
 
-let score1 = 0
-let score2 = 0
-function comparacao(personagemApostado,personagem2){
+async function comparacao(personagemApostado, personagem2) {
+  return new Promise(resolve => {
+    let score1 = 0;
+    let score2 = 0;
 
-  if( personagemApostado.forca > personagem2.forca ){
-    score1++;
-   
+    if (personagemApostado.forca > personagem2.forca) {
+      score1++;
+      console.log("+1 forca");
+    } else if (personagem2.forca > personagemApostado.forca) {
+      score2++;
+    }
 
-  } else if (personagem2.forca > personagemApostado.forca){
-    score2++;
-    
-  }
+    if (personagemApostado.agilidade > personagem2.agilidade) {
+      score1++;
+      console.log("+1 agi");
+    } else if (personagem2.agilidade < personagemApostado.agilidade) {
+      score2++;
+    }
 
-  if(personagemApostado.agilidade > personagem2.agilidade){
-    score1++;
-    
-  } else if (personagem2.agilidade > personagemApostado.agilidade){
-    score2++;
-    
-  }
+    if (personagemApostado.resistencia > personagem2.resistencia) {
+      score1++;
+      console.log("+1 res");
+    } else if (personagem2.resistencia < personagemApostado.resistencia) {
+      score2++;
+    }
 
-  if(personagemApostado.resistencia > personagem2.resistencia){
-    score1++;
-    
-  } else if (personagem2.resistencia > personagemApostado.resistencia){
-    score2++;
-    
-  }
+    if (score1 > score2) {
+      resultado.innerHTML = "Você Ganhou!!!!!!";
+    } else{
+      resultado.innerHTML = "Você Perdeu!!!!!!";
+    }
 
-
-  if (score1 > score2){
-    resultado.textContent = "Você Ganhou!!!!!!"
-  } else {
-    resultado.textContent = "Você perdeu!!!!!!"
-  }
-} 
+    resolve();
+  });
+}
 
 restart.addEventListener("click", ( ) => {
-  score1 = 0
-  score2 = 0
-  
   thirdScreen.style.display = "none"
   firstScreen.style.display = "flex"
 })
-
 
 // scroll top
 const scrollToTopButton = document.querySelector('.scrollTop');
