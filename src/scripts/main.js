@@ -124,6 +124,8 @@ restart.addEventListener("click", ( ) => {
   firstScreen.style.display = "flex"
 })
 
+
+
 // scroll top
 const scrollToTopButton = document.querySelector('.scrollTop');
 const rootElement = document.documentElement;
@@ -149,6 +151,8 @@ window.addEventListener('scroll', () => {
 
 
 scrollToTopButton.addEventListener('click', scrollToTop);
+
+
 
 // slider 
 const slider = document.querySelector('.slider');
