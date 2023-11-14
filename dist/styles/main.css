@@ -65,6 +65,7 @@
 
 .container {
   background-blend-mode: darken;
+  background-color: #0000006f;
   background-image: url("../arcane-header.ea1f666e.jpeg");
   background-position: center;
   background-size: cover;

@@ -14,15 +14,15 @@
 <body>
       
       <header class="arcane">
-          <div class="container">
+          <div class="container" id="container23">
             <nav class="arcane_nav">
               <div class="links">
                 <img src="images/riot-games-256.png" alt="" class="img-logo" >
               </div>
               <div class="arc_nav_theme">
-                    <span>ESCOLHA A REGIÃO:</span>
-                 <img src="images/zaun_crest_icon.png" alt="" class="img-icon">
-                    <img src="images/piltover_crest_icon.png" alt="" class="img-icon2" >
+                    <span id="change-text">ESCOLHA A REGIÃO:</span>
+                 <img src="images/zaun_crest_icon.png" alt="" class="img-icon" id="zaun">
+                    <img src="images/piltover_crest_icon.png" alt="" class="img-icon2" id="piltover" >
               </div>
             </nav>
               <div class="arc__box">
@@ -53,19 +53,19 @@
         <div class="zaun-init" data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500">
-            <h1 class="title-big">ZAUN</h1>
+            <h1 class="title-big" id="title-1">ZAUN</h1>
         </div>
 
         <div class="img-icon-zaun" data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500">
-            <img src="images/zaun_crest_icon.png" alt="">
+            <img src="images/zaun_crest_icon.png" alt="" id="piltover-icon">
         </div>
 
         <div class="description-zaun" data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500">
-            <p class="text-zaun title--medium">Zaun é um grande distrito subterrâneo, aos pés de cânions profundos e vales que cortam Piltover. A pouca luz que chega lá é filtrada pelas fumaças que saem dos emaranhados de canos corroídos e refletem do vidro manchado de sua arquitetura industrial. Zaun e Piltover já foram unidas, mas agora são sociedades simbióticas, mas separadas. Apesar de existir no crepúsculo perpétuo da poluição, Zaun prospera com seu povo vibrante e sua rica cultura. A riqueza de Piltover permitiu que Zaun se desenvolvesse em paralelo; um espelho escuro da cidade acima. Muitas das mercadorias que chegam a Piltover acabam entrando no mercado clandestino de Zaun, e os inventores hextec que consideram que as restrições impostas na cidade acima são muito rígidas descobrem que suas pesquisas perigosas são bem-vindas em Zaun. O desenvolvimento desenfreado de tecnologias voláteis e da indústria imprudente fez com que as extensões de Zaun ficassem poluídas e perigosas. Correntes de derramamento tóxico estagnaram nas partes mais baixas da cidade, mas mesmo aqui as pessoas encontram maneiras de existir e prosperar. Logo abaixo uma breve apresentação dos protagosnistas que vivem nessa cidade
+            <p class="text-zaun title--medium" id="p1-pilt">Zaun é um grande distrito subterrâneo, aos pés de cânions profundos e vales que cortam Piltover. A pouca luz que chega lá é filtrada pelas fumaças que saem dos emaranhados de canos corroídos e refletem do vidro manchado de sua arquitetura industrial. Zaun e Piltover já foram unidas, mas agora são sociedades simbióticas, mas separadas. Apesar de existir no crepúsculo perpétuo da poluição, Zaun prospera com seu povo vibrante e sua rica cultura. A riqueza de Piltover permitiu que Zaun se desenvolvesse em paralelo; um espelho escuro da cidade acima. Muitas das mercadorias que chegam a Piltover acabam entrando no mercado clandestino de Zaun, e os inventores hextec que consideram que as restrições impostas na cidade acima são muito rígidas descobrem que suas pesquisas perigosas são bem-vindas em Zaun. O desenvolvimento desenfreado de tecnologias voláteis e da indústria imprudente fez com que as extensões de Zaun ficassem poluídas e perigosas. Correntes de derramamento tóxico estagnaram nas partes mais baixas da cidade, mas mesmo aqui as pessoas encontram maneiras de existir e prosperar. Logo abaixo uma breve apresentação dos protagosnistas que vivem nessa cidade
         </div>
         <img src="images/t1HeaderDivider.png" alt="" width="100%">
 </section>
@@ -337,7 +337,7 @@ A Quimtec é uma forma alternativa e mais arriscada de alcançar avanços tecnol
 
       <footer>
           <div class="footer-links">
-              <a href="home.html" class="title--medium" >home</a>
+              <a href="home.html" class="title--medium" >Home</a>
               <a href="midia.html"class="title--medium"  >Midia</a>
           </div>
 
@@ -360,5 +360,6 @@ A Quimtec é uma forma alternativa e mais arriscada de alcançar avanços tecnol
     <script>
         AOS.init();
 </script>
+<script src="scripts/troca-tema.js"></script>
 </body>
 </html>
