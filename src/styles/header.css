@@ -1,0 +1,170 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/arcane-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.434);
+}
+
+.arcane {
+  max-height: 70.938rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.718);
+}
+.arcane_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15rem;
+  font-size: 2.3rem;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+.arcanearc_nav_theme {
+  width: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.773);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.img-logo {
+  width: 13.5rem;
+}
+
+.img-icon {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.img-icon2 {
+  width: 4rem;
+  height: 5rem;
+  margin-right: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.img-icon:hover {
+  width: 7rem;
+  height: 7rem;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.img-icon2:hover {
+  width: 7rem;
+  height: 7rem;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.title-big {
+  font-size: 3.4rem;
+  color: #8b6b37;
+  font-family: "League Gothic", sans-serif;
+  letter-spacing: 1;
+}
+
+.title--medium {
+  font-size: 2.1rem;
+  color: #c0b599;
+  font-family: "League Gothic", sans-serif;
+  text-decoration: none;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.bar {
+  height: 5px;
+  width: 23rem;
+  background-color: #5e4507;
+  margin: 10px 0;
+  box-shadow: 3px solid rgba(255, 255, 255, 0.699);
+  border-radius: 10px;
+}
+
+.arc__box {
+  backdrop-filter: blur(7px);
+  padding: 20px;
+  max-width: 30rem;
+  background-color: rgba(51, 62, 44, 0.4039215686);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.2rem;
+  position: relative;
+  top: 5rem;
+  left: 10rem;
+  right: 5rem;
+  bottom: 0;
+}
+
+input[type=email] {
+  width: 20rem;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-arc {
+  background-color: #8b6b37;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn-arc:hover {
+  background: linear-gradient(to right, #8b6b37, #5e4507, rgba(0, 0, 0, 0.762));
+  color: #c0b599;
+  padding: 1.2rem;
+}
+
+.link-a {
+  margin: 10px 10px;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  box-shadow: 1px solid rgba(0, 0, 0, 0.675);
+}
+
+.link-a:hover {
+  color: #5e4507;
+  font-size: 2.5rem;
+  box-shadow: 1px solid rgba(0, 0, 0, 0.675);
+}
+
+.pags {
+  margin: 1.2rem;
+}
+
+/*# sourceMappingURL=header.css.map */

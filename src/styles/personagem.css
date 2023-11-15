@@ -1,0 +1,58 @@
+.personagens {
+  background-color: rgba(0, 0, 0, 0);
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 605px;
+  overflow: hidden;
+  margin: 0;
+}
+.personagens__container {
+  display: flex;
+  width: 100%;
+}
+.personagens__container .painel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 405px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+.personagens__container .painel h3 {
+  font-size: 2.4rem;
+  position: absolute;
+  bottom: 20px;
+  left: 75px;
+  margin: 0;
+  opacity: 0;
+}
+.personagens__container .painel.active {
+  flex: 5;
+}
+.personagens__container .painel.active h3 {
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+@media (max-width: 480px) {
+  .personagens {
+    height: 505px;
+  }
+  .personagens__container {
+    width: 100vw;
+  }
+  .personagens .painel h3 {
+    left: 20px;
+  }
+  .personagens .painel:nth-of-type(4),
+  .personagens .painel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=personagem.css.map */
