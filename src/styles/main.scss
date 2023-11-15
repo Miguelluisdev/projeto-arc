@@ -108,11 +108,12 @@ body{
   align-items: center;
   text-align: center;
    padding: 1.25rem;
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0.347);
   background-image: url(../images/lab-quimtec.jpg);
   background-size: cover;
   background-blend-mode: darken;
   backdrop-filter: blur(2px);
+  background-position: center;
 }
 
 

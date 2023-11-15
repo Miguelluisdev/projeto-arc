@@ -40,6 +40,30 @@ const title3 = document.getElementById("title3");
 const p2Pilt = document.getElementById("p2");
 const zaunSect = document.getElementById("zaun-section");
 
+const personContainer = document.getElementById("person-container");
+const img1 = document.getElementById("img1");
+const img2 = document.getElementById("img2");
+const img3 = document.getElementById("img3");
+const img4 = document.getElementById("img4");
+const img5 = document.getElementById("img5");
+const nome1 = document.getElementById("nome1");
+const nome2 = document.getElementById("nome2");
+const nome3 = document.getElementById("nome3");
+const nome4 = document.getElementById("nome4");
+const nome5 = document.getElementById("nome5");
+
+const zaunRegion1 = document.getElementById("zaun-region1");
+const title4 = document.getElementById("title4");
+const poliPiltover = document.getElementById("poli-piltover1");
+const poliPiltover2 = document.getElementById("poli-piltover2")
+const p3Pilt = document.getElementById("p3-pilty");
+
+const zaunRegion3 = document.getElementById("zaun-region3");
+const title5 = document.getElementById("title5");
+const imgHex = document.getElementById("img-hextec");
+const p4Pilty = document.getElementById("p4-pilty");
+
+
 piltover.addEventListener("click", () => {
 
   mudaBgPiltover()
@@ -90,8 +114,36 @@ piltover.addEventListener("click", () => {
   imgSlide7.setAttribute("src" , "https://cdn.discordapp.com/attachments/879808195240005745/1174151003248021504/World-of-RiotX-Arcane-Key-Art-910x547.jpg?ex=65668c55&is=65541755&hm=43fb128796e0c3d7aaaa349b09b879a5b4e0d52455b856d9f09de971976f7d10&" );
   
   
-  zaunSect.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1151211352958959826/1174154837361971270/arcane-vi-lol-skin-hd-wallpaper-371d.jpg?ex=65668fe7&is=65541ae7&hm=2144d6195f648f4d39a098bb3f08686a83b0b1fe25b149ac8ffb83b69092289e&')"
+  zaunSect.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1151211352958959826/1174154837361971270/arcane-vi-lol-skin-hd-wallpaper-371d.jpg?ex=65668fe7&is=65541ae7&hm=2144d6195f648f4d39a098bb3f08686a83b0b1fe25b149ac8ffb83b69092289e&')";
 
+  personContainer.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1151211352958959826/1174141027729281075/piltover-entrancetreasury.jpg?ex=6566830b&is=65540e0b&hm=0e359a0e94cfe6acba6a48d3958c00ba0eb2bbad56d4d0e70ad29bd86916ae9a&')";
+  img1.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1151211352958959826/1174400513207435284/piltover_people_01.png?ex=656774b5&is=6554ffb5&hm=6010c0e2aa487213aa3a5cd371c1d006f147b7dae3bec2baa436dfab7881e87b&')";
+  img2.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1151211352958959826/1174400512544751626/piltover_people_03.png?ex=656774b5&is=6554ffb5&hm=0c848e9f2e4a59c9ba4c7f20f782e948e743e7b177c28acdf3a12cb791727278&')";
+  img3.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1151211352958959826/1174400512850939934/piltover_people_02.png?ex=656774b5&is=6554ffb5&hm=732b35e1809ffd983ce798af770b94d0ac26211ff0baac268f216b6d2691e317&')";
+  img4.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1151211352958959826/1174400512221773845/piltover_people_04.png?ex=656774b5&is=6554ffb5&hm=c6b8ca929c23f9a58a5d8f812f76cda11c83bfec85e47579aa517982fc3c0008&')";
+  img5.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1151211352958959826/1174402865461211236/hogni-j-mohr-5.png?ex=656776e6&is=655501e6&hm=bb383f67716b3d130f4a7b3cebd1015097daef2a76083555705e1d59b412b5f9&')";
+
+
+  nome1.textContent = "Residentes da Cidade";
+  nome2.textContent = "Jae Medarda";
+  nome3.textContent = "Vigia";
+  nome4.textContent = "Vaido Violante";
+  nome5.textContent = "Defensora";
+
+
+  zaunRegion1.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1151211352958959826/1174405771224694824/consolho_de_piltover.png?ex=6567799b&is=6555049b&hm=e891ec5a2d5a6f496a6803f32bf4fb23145174127f89edb7a67441f9cc8d28a4&')";
+
+  title4.textContent = "Lei E Ordem"
+  poliPiltover.setAttribute("src" , "https://cdn.discordapp.com/attachments/1151211352958959826/1174409367559348297/Jumaralo_Hex_on_Twitter.png?ex=65677cf4&is=655507f4&hm=d5cec55489422ea0f45832e3ab55b9c7b498c8802f9be0dc40b0e1e4d4a38e37&");
+  poliPiltover2.setAttribute("src" , "https://cdn.discordapp.com/attachments/1151211352958959826/1174409367278338148/imagem_2023-11-15_150317759.png?ex=65677cf4&is=655507f4&hm=1eaa5468884382f0ccf80fe4c80e76c5a462550bb430aec013083d057eb2cc8a&");
+  p3Pilt.textContent = "Os Vigias são homens e mulheres com a tarefa de manter a lei de Piltover. A organização é financiada por impostos comerciais e contribuições “voluntárias” dos clãs mercantis, armando os Vigias com uniformes e equipamentos. Muitas dessas doações tomam a forma de tecnologia hextec única, como armas ou outros dispositivos especializados.Jago, o atual mestre do Clã Medarda, impõe respeito e poder imensos através de Piltover. Com a renda gerada pelas patentes de pistão de seu pai, Jago financia pesquisas que estudam como usar hextec para acelerar os Portões Solares."
+
+
+  zaunRegion3.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1151211352958959826/1174412678505168986/Jinx-from-Arcane-shines-like-a-hextech-crystal.jpg?ex=6567800a&is=65550b0a&hm=81e5f1caa6c0aae351d18d4ac0e7a0d0dfad78886c4cfff69f2147a8a58dece9&')";
+
+  title5.textContent = "Hextec"
+  imgHex.setAttribute("src" , "https://cdn.discordapp.com/attachments/1151211352958959826/1174414555821129738/russell-harper-russell-harper-hextech-crystal-lp-v0.png?ex=656781c9&is=65550cc9&hm=cf1091ed8615c5edb2eceddeb4603afe68b9cf075993ec3328345269c67489ea&");
+  p4Pilty.textContent = "Hextec é a nova fusão emergente de magia e tecnologia, usada para criar artefatos requintados que podem ser utilizados por qualquer um, não apenas por aqueles que possuem uma aptidão para as artes arcanas. Ela aproveita o poder mágico contido em cristais extremamente raros e seu poder é limitado apenas pela imaginação de seus usuários. É capaz de feitos incríveis, desde dar energia a máquinas até criar raios de luz capazes de cortar o aço mais forte. O processo de criação hextec é um segredo guardado a sete chaves e o trabalho de cada artífice usa métodos diferentes. Assim, cada item hextec é um artefato único de beleza rara, uma criação personalizada que provavelmente levou anos para ser montada.";
 
 });
 

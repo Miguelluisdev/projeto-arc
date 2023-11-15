@@ -1,5 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=League+Gothic&display=swap";
 .personagens {
+  background-color: #0000;
   justify-content: center;
   align-items: center;
   height: 605px;
@@ -917,8 +918,9 @@ body {
   background-blend-mode: darken;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-  background-color: #0000;
+  background-color: #00000058;
   background-image: url("../lab-quimtec.168e739b.jpeg");
+  background-position: center;
   background-size: cover;
   flex-direction: column;
   align-items: center;
