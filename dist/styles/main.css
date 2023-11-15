@@ -70,6 +70,7 @@
   background-image: url("../arcane-header.ea1f666e.jpeg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 100vh;
 }
@@ -782,12 +783,13 @@ input[type="email"] {
 
 footer {
   background-blend-mode: darken;
-  color: #fff;
+  color: #c0b599;
   text-align: center;
-  background-color: #00000035;
+  background-color: #0009;
+  background-image: url("../bg-ing.05c51552.jpeg");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 30%;
   padding: 20px;
@@ -806,7 +808,7 @@ footer {
 }
 
 .footer-links a {
-  color: #fff;
+  color: #c0b599;
   letter-spacing: 1px;
   margin: 2.4rem;
   padding: 2.4rem;
@@ -820,7 +822,7 @@ footer {
 }
 
 #copyright {
-  color: #fff;
+  color: #c0b599;
   letter-spacing: 1px;
   font-family: League Gothic, sans-serif;
   font-size: 2.4rem;
@@ -904,6 +906,7 @@ body {
   background-blend-mode: darken;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
+  background-color: #0000006f;
   background-image: url("../renata-bsron.49fa70d5.jpeg");
   background-position: center;
   background-size: cover;

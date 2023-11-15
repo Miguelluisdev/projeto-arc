@@ -1,11 +1,12 @@
 footer {
 
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/bg-ing.jpg);
   background-size: cover;
-  background-blend-mode: darken;
   background-position: center center;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.207);
-  color: #fff;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  color: #c0b599;
   padding: 20px;
   text-align: center;
   width: 100%;
@@ -27,7 +28,7 @@ footer {
 
 .footer-links a {
   font-size: 2.4rem;
-  color: #fff;
+  color: #c0b599;
   font-family: 'League Gothic', sans-serif;
   letter-spacing: 1;
   margin: 2.4rem ;
@@ -40,7 +41,7 @@ footer {
 
 #copyright {
   font-size: 2.4rem;
-  color: #fff;
+  color: #c0b599;
   font-family: 'League Gothic', sans-serif;
   letter-spacing: 1; /* Cor de texto marrom escuro */
 }

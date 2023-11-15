@@ -64,6 +64,94 @@ const imgHex = document.getElementById("img-hextec");
 const p4Pilty = document.getElementById("p4-pilty");
 
 
+zaun.addEventListener("click", () => {
+  mudaBgZaun()
+  changeText.textContent = "ZAUN"
+  
+  title1.textContent = "ZAUN"
+  piltoverIcon.setAttribute("src", "https://cdn.discordapp.com/attachments/866700822942973972/1174421664566624370/zaun_crest_icon.png?ex=65678868&is=65551368&hm=ccc4db69b0378dedf26fbe0ccaad4ef97ad04deaee0ca00ae5ac3b65fc808ec4&");
+  
+  p1Pilt.textContent = "Zaun é um grande distrito subterrâneo, aos pés de cânions profundos e vales que cortam Piltover. A pouca luz que chega lá é filtrada pelas fumaças que saem dos emaranhados de canos corroídos e refletem do vidro manchado de sua arquitetura industrial. Zaun e Piltover já foram unidas, mas agora são sociedades simbióticas, mas separadas. Apesar de existir no crepúsculo perpétuo da poluição, Zaun prospera com seu povo vibrante e sua rica cultura. A riqueza de Piltover permitiu que Zaun se desenvolvesse em paralelo; um espelho escuro da cidade acima. Muitas das mercadorias que chegam a Piltover acabam entrando no mercado clandestino de Zaun, e os inventores hextec que consideram que as restrições impostas na cidade acima são muito rígidas descobrem que suas pesquisas perigosas são bem-vindas em Zaun. O desenvolvimento desenfreado de tecnologias voláteis e da indústria imprudente fez com que as extensões de Zaun ficassem poluídas e perigosas. Correntes de derramamento tóxico estagnaram nas partes mais baixas da cidade, mas mesmo aqui as pessoas encontram maneiras de existir e prosperar. Logo abaixo uma breve apresentação dos protagosnistas que vivem nessa cidade";
+
+  zaunRegion.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174422052267098212/zaun.jpg?ex=656788c4&is=655513c4&hm=72d70ce98e3f990813c3bc2c3449ab3e3a9600f3bcf2d001114a57763f54366f&')";
+
+
+  containerGrid.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174422549304725584/Zaun-02.jpg?ex=6567893b&is=6555143b&hm=65d94e58fd6a0d8d8fbc88293f532690698e46e0dfbc3adf15dc4df108dddeb9&')";
+
+
+  bg1.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174423140147929200/Arcane_Jinx.jpg?ex=656789c8&is=655514c8&hm=0e681e0d64b61b1423a09f62ca1916344ef776dead4c8b7e5e01b19dddabe3cb&')";
+  bg2.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174423140521218088/Arcane_Vi.jpg?ex=656789c8&is=655514c8&hm=defacc7ed0050fe4dc32285e7adf7b6782f4659921e10fbdf0a3ef5a91a8981b&')";
+  bg3.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174423141095837736/ekko.jpg?ex=656789c8&is=655514c8&hm=54890d07cb1298e794521c857a04b3c29bc24c331ce3ed29f5d64d1b0df55146&')";
+  bg4.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174423141683044452/Vander_Arcane_Wallpaper_-_iXpap.jpg?ex=656789c8&is=655514c8&hm=2c72101eaa8cc3cda766e41283638294c9c63a3430d28caced7e64c9121af3a8&')";
+  bg5.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174423246817460277/silco.jpg?ex=656789e1&is=655514e1&hm=61e404a8064af9998f2f27ece17974c13bb864b333fbe01a6188ef72173def04&')";
+  bg6.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174423140756103249/arcane-singed.jpg?ex=656789c8&is=655514c8&hm=c9788c1465757145a35df15f697eb6cab89a2d450f714d5eb67035db8902bed1&')";
+  bg7.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174423141368479795/Twitch.jpg?ex=656789c8&is=655514c8&hm=a200bf53ca583ee3de995015a636019e97756ff142ebc570ff085d28963d4dfa&')";
+  bg8.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174423141980835921/warwick.jpg?ex=656789c8&is=655514c8&hm=c4dbe675eb22561fa3576fd44209db29f2ebde74ab94c7f0302880f54935a66e&')"
+
+  title1Grid.textContent = "JINX";
+  title2Grid.textContent = "VI";
+  title3Grid.textContent = "EKKO";
+  title4Grid.textContent = "VANDER";
+  title5Grid.textContent = "SILCO";
+  title6Grid.textContent = "SINGED";
+  title7Grid.textContent = "TWITCH";
+  title8Grid.textContent = "WARWICK";
+
+  
+  title2.textContent = "Zaun A SubFeria";
+  title3.textContent = "Sobre Zaun"
+  p2Pilt.textContent = 'A Vida em Zaun A baixa expectativa de vida dos trabalhadores de Zaun resulta em um grande número de órfãos. Pivetes do Sumidouro podem ser encontrados implorando, roubando ou trabalhando para receber pagamento em lugares onde seu tamanho pequeno é uma vantagem. Quando os canos de Zaun entopem com gosma tóxica, os quimio- -encanadores usam suas hastes corrosivas para desentupi-los. Uma placa protetora para o rosto é essencial, já que as casas de cura já estão lotadas de quimio-encanadores cegos e queimados. Os viginautas, empregados pelos Barões da Química para supervisionar os catadores do Sumidouro que andam em pernas de pau e trabalhadores de fábricas, garantem que esses desafortunados não tentem manter algo valioso para si. Nada é desperdiçado em Zaun e mesmo as terras tóxicas interiores do Sumidouro podem ser vasculhadas por algo a ser recolhido. Esses ambientes tóxicos são hostis demais para um humano desprotegido, então os catadores do Sumidouro trabalham andando pelo esgoto em pernas de pau de metal. Abaixo veja alguns exemplos da vestimenta do povo de Zaun:'
+
+  
+
+
+
+  imgSlide1.setAttribute("src","https://cdn.discordapp.com/attachments/866700822942973972/1174425897663737906/zaun-depths.jpg?ex=65678c59&is=65551759&hm=f9ff11666782138043e18f8edbe4c1aab23b2f3ef3c0405e5c3993607f181c60&" );
+  imgSlide2.setAttribute("src", "https://cdn.discordapp.com/attachments/866700822942973972/1174425895851790406/Jinx-Piltover-and-Zaun-LoR.jpg?ex=65678c59&is=65551759&hm=b885b1f1d1d82a2362d806ed042a2aaadf5985c67d3436fdd6cbfefdc82278ff&");
+  imgSlide3.setAttribute("src","https://cdn.discordapp.com/attachments/866700822942973972/1174425896900366446/zaun.jpg?ex=65678c59&is=65551759&hm=d4ec78b34abba80c5d7614268132f8b6dc09d01e45db4c018ff106c5f3dac7a6&");
+  imgSlide4.setAttribute("src", "https://cdn.discordapp.com/attachments/866700822942973972/1174425897277857873/Zaun-02.jpg?ex=65678c59&is=65551759&hm=5ae68e084630148a7b869126015de4320d4196a613cf5eacf5b649f293c78cbc&")
+  imgSlide5.setAttribute("src", "https://cdn.discordapp.com/attachments/866700822942973972/1174426017180438558/Fun_Where_They_Run__Creating_Zaun_in_a_CG.jpg?ex=65678c76&is=65551776&hm=774edf5bb62b998e70fee67b75c56babd16f39b3ed74243f787190ca5c526b48&");
+  imgSlide6.setAttribute("src", "https://cdn.discordapp.com/attachments/866700822942973972/1174425896543858749/Vi_violet_Arcane_wallpaper__3.jpg?ex=65678c59&is=65551759&hm=46c5876136c31b5e544e353ecbf4e1863568355ffc0de7455a1756caaaf8d888&");
+  imgSlide7.setAttribute("src" , "https://cdn.discordapp.com/attachments/866700822942973972/1174425896254439585/Lor-Zaun_and_Piltover_Jayison_Devadas.jpg?ex=65678c59&is=65551759&hm=47ce01a145d154fe990620af48e32ca6ee3a902c6e0c8f9f0cac9a6bb1834270&" );
+  
+  
+  zaunSect.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174426944117416066/arcane-jinx-lol-skin-splash-art-hd-wallpaper-uhdpaper.com-161e.jpg?ex=65678d53&is=65551853&hm=c04e0f47f7e4559f4ac5902447e4152dcd6b46efd4f8f7a01d5ad718946b5b12&')";
+
+
+  
+  personContainer.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174425897663737906/zaun-depths.jpg?ex=65678c59&is=65551759&hm=f9ff11666782138043e18f8edbe4c1aab23b2f3ef3c0405e5c3993607f181c60&')";
+  img1.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174427705425547274/zaun_promenade_03.png?ex=65678e08&is=65551908&hm=dcf17a2171d6077af3daad4e27eeb9aaa2ebe818727942c9c76a55b6b92a046c&')";
+  img2.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174427705811402802/zaun_promenade_04_1.png?ex=65678e08&is=65551908&hm=562016961f65397c7c2fec23380b0e0c77fd5cb07d5cdb542238002e19f09508&')";
+  img3.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174427706209882192/zaun_promenade_05.png?ex=65678e08&is=65551908&hm=9d9771450bc374b077e897d46d389d3e3f2765a59ed6703a327e31ab2fb985b2&')";
+  img4.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174427706545405972/zaun_sump_02.png?ex=65678e09&is=65551909&hm=9f0542417e27e60712dbef514d55759a2acacd17f6365fc9d00faaec197b0f61&')";
+  img5.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174427706864181400/zaun_sump_03.png?ex=65678e09&is=65551909&hm=a463c3db3b41f86f03470f34882efa4676047c42c1cadbefbdca70882418e66b&')";
+
+
+  nome1.textContent = "MERCADOR HORTICULTOR";
+  nome2.textContent = "PESQUISADOR QUIMTEC";
+  nome3.textContent = "RESIDENTE DO CALÇADÃO";
+  nome4.textContent = "GAROTO DE ZAUN";
+  nome5.textContent = "HOMEM DE ZAUN";
+
+
+  
+  zaunRegion1.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174428547201368154/renata-bsron.jpg?ex=65678ed1&is=655519d1&hm=709b5b883fa337c2752eb7262bb5392869a2260626fa70fdf96c44c13a9e898a&')";
+
+  title4.textContent = "Barões da Quimica"
+  poliPiltover.setAttribute("src" , "https://cdn.discordapp.com/attachments/866700822942973972/1174427704582492160/zaun_baron_02.png?ex=65678e08&is=65551908&hm=7326a9f03e8f8e368e350840d40cea885a3d469606f29e437c564be559c8fd1e&");
+  poliPiltover2.setAttribute("src" , "https://cdn.discordapp.com/attachments/866700822942973972/1174427705031270451/zaun_baron_04.png?ex=65678e08&is=65551908&hm=98a7be9bb38279fedd3d8772dab1989f3602d5559289447db5cc2197feeccad1&");
+  p3Pilt.textContent = "Barões da Química Uma aliança tênue de conveniência existe entre os poderosos Barões da Química de Zaun, indivíduos poderosos que controlam, cada um, uma zona da cidade. São eles e seus brutamontes que impedem que Zaun seja tomada pelo caos. Baronesa Velveteen Lenare Uma baronesa da química com muitos interesses de negócios em Piltover, Lenare lida principalmente com pesquisas em tecnologia golem. Seu corpo destruído estava morrendo, então ela fez com que transplantassem sua cabeça em um substituto movido a hexenergia. Ela visita Piltover regularmente para banhos de fluídos e transfusões de sangue e óleo. Barão Petrok Grime Grime perdeu os seus dois braços em uma explosão em uma de suas refinarias químicas. Apesar, ou talvez por causa disso, seu estoque quimtec tem algumas das misturas mais procuradas."
+
+
+  zaunRegion3.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/866700822942973972/1174429856616955934/lab-quimtec.jpg?ex=65679009&is=65551b09&hm=8cfce20fb85ee5c16ecd94aa76d1fe9d44219fc73a83d30200160b70285c37a9&')";
+
+  title5.textContent = "Quimtec"
+  imgHex.setAttribute("src" , "https://cdn.discordapp.com/attachments/866700822942973972/1174429857246089356/zaun_tools_01.png?ex=65679009&is=65551b09&hm=5e6e494134264a4713c9085d40e9ea4bf3d495a8edcab3510578dded22e40429&");
+  p4Pilty.textContent = "'Quimtec' é um termo utilizado na série de animação 'Arcane', que se passa no universo de League of Legends. Os pesquisadores de Zaun recorrem à Quimtec quando não têm acesso aos fundos e meios para criar tecnologias Hextec. Aqui está uma expansão do conceito da Quimtec em  'Arcane': A Quimtec é uma forma alternativa e mais arriscada de alcançar avanços tecnológicos em Zaun. Ela envolve a manipulação de substâncias químicas potentes e instáveis para conferir poder a criações mecânicas, dispositivos e armamentos. Ao contrário da tecnologia Hextec, que se baseia na magia da Energia Hextec, a Quimtec é menos previsível e muito mais perigosa.";
+
+})
+
+
 piltover.addEventListener("click", () => {
 
   mudaBgPiltover()
