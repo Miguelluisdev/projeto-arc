@@ -1,8 +1,8 @@
 /* o que e cpaas*/
 .oque-cpaas .container{
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.474);
-  background-image: url(../images/midia-img.jpg);
+  background-color: rgba(0, 0, 0, 0.551);
+   background-image: url(../images/zaun-4.jpg); 
   background-size: cover;
   background-blend-mode: darken;
   display: flex;
@@ -36,8 +36,8 @@
 
 .oque-cpaas2 .container{
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.234);
-  background-image: url(../images/vi-block.jpeg);
+  background-color: rgba(0, 0, 0, 0.551);
+   background-image: url(../images/piltover-sect.jpg); 
   background-size: cover;
   background-blend-mode: darken;
   display: flex;

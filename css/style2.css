@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+
+::-webkit-scrollbar{
+  width: 10px;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #c0b599;
+  border-radius: 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;;
+}
+
+body{
+  background: linear-gradient(to bottom,  #8B0000 , #006400);
+}
+
+section, footer{
+    padding: 54px 0;
+}
+
+h3{
+    font-size: 50px;
+}
+
+p{
+    color: #0000009c;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30%;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.684);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: #c0b599;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    display: block;
+}
+
+nav ul a:not(.btn)::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+    color: #8b6b37;
+}
+
+
+
+/*Menu Mobile*/
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: #c0b599;
+    display: none;
+}
+nav .close-icon{
+    display: none;
+    font-size: 30px;
+    color: #c0b599;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1{
+    font-size: 2.5rem;
+    color: #8b6b37;
+}
+
+.banner .banner-text p{
+    font-size: 1.3rem;
+    color: #c0b599;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+/* o que e cpaas*/
+.oque-cpaas .container{
+    display: flex;
+    align-items: center;
+}
+
+.oque-cpaas .oque-cpaas-text{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.oque-cpaas .oque-cpaas-text h3{
+    font-size: 56px;
+    color: #8b6b37;
+}
+
+.oque-cpaas .oque-cpaas-text p{
+    margin: 5px 0 10px 0;
+    color: #c0b599;
+}
+
+.oque-cpaas .oque-cpaas-img{
+    width: 50%;
+}
+
+.oque-cpaas .oque-cpaas-img img{
+    width: 100%;
+}
+
+
+
+
+/* Transformção Digital CPAAS*/
+
+.oque-cpaas2 .container{
+    display: flex;
+    align-items: center;
+}
+
+.oque-cpaas2 .oque-cpaas2-text{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.oque-cpaas2 .oque-cpaas2-text h3{
+    font-size: 40px;
+    color: #8b6b37;
+}
+
+.oque-cpaas2 .oque-cpaas2-text p{
+    margin: 5px 0 10px 0;
+    color: #c0b599;
+}
+
+.oque-cpaas2 .oque-cpaas2-img{
+    width: 50%;
+}
+
+.oque-cpaas2 .oque-cpaas2-img img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/*rodapé do Home*/
+
+.rodape {
+    background-color: #4f9cf9;
+    text-align: center;
+}
+
+.rodape i {
+    color: #4f9cf9;
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.rodape p {
+    margin-top: 10px;
+    color: white;
+}
+
+@media(max-width: 830px){
+    /*Menu Mobile*/
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color:#8b00004e ;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+    .ul.open{
+        clip-path: circle(141.4% at 100% 0);
+    }
+    .ul a{
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    nav .menu-icon{
+        display: block;
+    }
+    nav .close-icon{
+        display: block;
+        position: absolute;
+        top: 46px;
+        right: 28px;
+    }
+    /*Página Home Reponsiva*/
+    
+    .oque-cpaas .oque-cpaas-text{
+        margin-top: 10px;
+        padding: 0 20px;
+        order: 1;
+    }
+    .oque-cpaas .container{
+        flex-direction: column;
+    }
+    .oque-cpaas .oque-cpaas-text h3{
+        font-size: 48px;
+    }
+    .oque-cpaas .oque-cpaas-text,
+    .oque-cpaas .oque-cpaas-img{
+        width: 100%;
+    }
+    /*Transformação Digital Responsiva*/
+
+    .oque-cpaas2 .oque-cpaas2-text{
+        margin-top: 10px;
+        padding: 0 20px;
+        order: 1;
+    }
+    .oque-cpaas2 .container{
+        flex-direction: column;
+    }
+    .oque-cpaas2 .oque-cpaas2-text h3{
+        font-size: 48px;
+    }
+    .oque-cpaas2 .oque-cpaas2-text,
+    .oque-cpaas2 .oque-cpaas2-img{
+        width: 100%;
+    }
+
+    /*Banner Responsivo*/
+    .banner .banner-text{
+        padding: 0;
+        margin: 80px;
+    }
+    .banner .banner-text  h1{
+        font-size: 2.5rem;
+    }
+    .banner .banner-text  p{
+        font-size: 1.3rem;
+    }
+
+    .depoimentos .card-item{
+        width: 100%;
+    }
+    .servicos .card-servico{
+        width: 100%;
+    }
+}
+
+.wrapper{
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.1s;
+}
+
+.link{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #c0b599;
+  border: 2px solid #654321;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.link span{
+  position: relative;
+  z-index: 2;
+}
+
+.link:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+}
+
+.link:hover{
+  color: #fff;
+}
+
+.link:hover:after{
+  width: 100%;
+}
+
+.hr-style{
+    height: 1px;
+    width: 100%;
+    background-color: #c0b599;
+    margin: 10px 0;
+    box-shadow: 3px solid rgba(255, 255, 255, 0.699);
+    border-radius: 10px;
+}
+.midia-bg{
+    background-image: url(../src/images/Vi\ violet\ Arcane\ wallpaper\ _3.jpg);
+}
+.container4 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #8b6b37;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
