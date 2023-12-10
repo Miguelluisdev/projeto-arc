@@ -1,979 +1,388 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
-.personagens {
-  background-color: rgba(0, 0, 0, 0);
-  font-family: sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 605px;
-  overflow: hidden;
-  margin: 0;
-}
-.personagens__container {
-  display: flex;
-  width: 100%;
-}
-.personagens__container .painel {
-  background-size: auto 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 405px;
-  color: white;
-  cursor: pointer;
-  flex: 0.5;
-  margin: 10px;
-  position: relative;
-  transition: flex 0.7s ease-in;
-}
-.personagens__container .painel h3 {
-  font-size: 2.4rem;
-  position: absolute;
-  bottom: 20px;
-  left: 75px;
-  margin: 0;
-  opacity: 0;
-}
-.personagens__container .painel.active {
-  flex: 5;
-}
-.personagens__container .painel.active h3 {
-  opacity: 1;
-  transition: opacity 2s ease-in;
-}
-@media (max-width: 480px) {
-  .personagens {
-    height: 505px;
-  }
-  .personagens__container {
-    width: 100vw;
-  }
-  .personagens .painel h3 {
-    left: 20px;
-  }
-  .personagens .painel:nth-of-type(4),
-  .personagens .painel:nth-of-type(5) {
-    display: none;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-.container {
-  height: 100vh;
-  width: 100%;
-  background-image: url(../images/arcane-header.jpg);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: darken;
-  background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.434);
-}
 
-.arcane {
-  max-height: 70.938rem;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.718);
-}
-.arcane_nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 15rem;
-  font-size: 2.3rem;
-  text-align: center;
-  backdrop-filter: blur(5px);
-}
-.arcanearc_nav_theme {
-  width: 1.25rem;
-  background-color: rgba(255, 255, 255, 0.773);
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(2px);
-}
 
-.links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-  padding: 2rem;
-}
-
-.img-logo {
-  width: 13.5rem;
-}
-
-.img-icon {
-  width: 5rem;
-  height: 5rem;
-  margin-right: 20px;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-.img-icon2 {
-  width: 4rem;
-  height: 5rem;
-  margin-right: 20px;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-.img-icon:hover {
-  width: 7rem;
-  height: 7rem;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.img-icon2:hover {
-  width: 7rem;
-  height: 7rem;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.title-big {
-  font-size: 3.4rem;
-  color: #8b6b37;
-  font-family: "League Gothic", sans-serif;
-  letter-spacing: 1;
-}
-
-.title--medium {
-  font-size: 2.1rem;
-  color: #c0b599;
-  font-family: "League Gothic", sans-serif;
-  text-decoration: none;
-  text-transform: none;
-  font-weight: 400;
-}
-
-.bar {
-  height: 5px;
-  width: 23rem;
-  background-color: #5e4507;
-  margin: 10px 0;
-  box-shadow: 3px solid rgba(255, 255, 255, 0.699);
-  border-radius: 10px;
-}
-
-.arc__box {
-  backdrop-filter: blur(7px);
-  padding: 20px;
-  max-width: 30rem;
-  background-color: rgba(51, 62, 44, 0.4039215686);
-  border-radius: 5px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 1.2rem;
-  position: relative;
-  top: 5rem;
-  left: 10rem;
-  right: 5rem;
-  bottom: 0;
-}
-
-input[type=email] {
-  width: 20rem;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.checkbox {
-  width: 20px;
-  height: 20px;
-}
-
-.btn-arc {
-  background-color: #8b6b37;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-.btn-arc:hover {
-  background: linear-gradient(to right, #8b6b37, #5e4507, rgba(0, 0, 0, 0.762));
-  color: #c0b599;
-  padding: 1.2rem;
-}
-
-.link-a {
-  margin: 10px 10px;
-  padding: 10px 10px;
-  text-decoration: none;
-  text-transform: capitalize;
-  box-shadow: 1px solid rgba(0, 0, 0, 0.675);
-}
-
-.link-a:hover {
-  color: #5e4507;
-  font-size: 2.5rem;
-  box-shadow: 1px solid rgba(0, 0, 0, 0.675);
-}
-
-.pags {
-  margin: 1.2rem;
-}
-
-.container2 {
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(../images/Zaun-02.jpg);
-  background-size: cover;
-  background-blend-mode: darken;
-  align-items: flex-start;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  padding: 64px 24px;
-}
-
-.card-grid {
-  display: grid;
-  grid-column-gap: 24px;
-  grid-row-gap: 24px;
-  max-width: 1200px;
-  width: 100%;
-}
-
-@media (min-width: 540px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 960px) {
-  .card-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-.card {
-  position: relative;
-}
-
-.card:before {
-  content: "";
-  display: block;
-  padding-bottom: 150%;
-  width: 100%;
-}
-
-.background1 {
-  background-image: url(../images/Arcane\ Jinx.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: filter 200ms linear, transform 200ms linear;
-}
-
-.background2 {
-  background-image: url(../images/Arcane\ Vi.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: filter 200ms linear, transform 200ms linear;
-}
-
-.background3 {
-  background-image: url(../images/ekko.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: filter 200ms linear, transform 200ms linear;
-}
-
-.background4 {
-  background-image: url(../images/Vander\ Arcane\ Wallpaper\ -\ iXpap.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: filter 200ms linear, transform 200ms linear;
-}
-
-.background5 {
-  background-image: url(../images/silco.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: filter 200ms linear, transform 200ms linear;
-}
-
-.background6 {
-  background-image: url(../images/arcane-singed.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: filter 200ms linear, transform 200ms linear;
-}
-
-.background7 {
-  background-image: url(../images/Twitch.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: filter 200ms linear, transform 200ms linear;
-}
-
-.background8 {
-  background-image: url(../images/warwick.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 24px;
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: filter 200ms linear, transform 200ms linear;
-}
-
-.card:hover .background {
-  transform: scale(1.05);
-  filter: none;
-}
-
-.card-grid:hover > .card:not(:hover) .background {
-  filter: brightness(0.6) saturate(1) contrast(1.2) blur(5px);
-}
-
-.card-grid:hover > .card:not(:hover) .content {
-  filter: brightness(0.8) blur(2px);
-}
-
-.content {
-  padding: 24px;
-  position: absolute;
-  top: 0;
-}
-
-.category {
-  color: #8b6b37;
-  font-size: 3.4rem;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  letter-spacing: 2;
-  font-family: "League Gothic", sans-serif;
-}
-
-.heading {
-  color: #c0b599;
-  font-size: 2.4rem;
-  font-family: "League Gothic", sans-serif;
-}
-
-.game {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-}
-.game__firstScreen {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  width: 100%;
-  height: 50%;
-  flex-direction: column;
-  background-image: url(../images/ekko-vsjinx.jpg);
-  background-size: cover;
-  background-blend-mode: darken;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.207);
-}
-.game__firstScreen img {
-  width: 40%;
-  margin-top: 10px;
-}
-.game__firstScreen button {
-  width: 115px;
-  height: 25px;
-  border-radius: 10px;
-  font-size: 1.6rem;
-  border: none;
-  background: linear-gradient(to right, #8B0000, #654321, #006400);
-  color: white;
-  cursor: pointer;
-  margin-bottom: 2.3rem;
-}
-@media (min-width: 744px) {
-  .game__firstScreen {
-    margin-top: 40px;
-    height: 400px;
-  }
-  .game__firstScreen img {
-    width: 331px;
-    margin-top: 35px;
-  }
-  .game__firstScreen button {
-    width: 262px;
-    height: 40px;
-    font-size: 2.4rem;
-    margin-top: 15px;
-    margin-bottom: 2.3rem;
-    background: linear-gradient(to right, #8B0000, #654321, #006400);
-  }
-}
-@media (min-width: 1044px) {
-  .game__firstScreen {
-    height: 700px;
-  }
-  .game__firstScreen img {
-    width: 40%;
-    margin-top: 40px;
-  }
-  .game__firstScreen button {
-    width: 509px;
-    height: 63px;
-    font-size: 3.6rem;
-    margin-top: 15px;
-    margin-bottom: 2.3rem;
-    background: linear-gradient(to right, #8B0000, #654321, #006400);
-  }
-}
-.game__secondScreen {
-  margin-top: 20px;
-  width: 100%;
-  height: 300px;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to right, #8B0000, #654321, #006400);
-}
-.game__secondScreen img {
-  width: 75%;
-  margin-bottom: 16px;
-}
-.game__secondScreen span {
-  font-size: 2rem;
-}
-@media (min-width: 744px) {
-  .game__secondScreen {
-    margin-top: 40px;
-    height: 400px;
-  }
-  .game__secondScreen span {
-    font-size: 2.5rem;
-  }
-}
-@media (min-width: 1044px) {
-  .game__secondScreen {
-    height: 700px;
-  }
-  .game__secondScreen span {
-    font-size: 3.2rem;
-  }
-}
-.game__bind {
-  margin-top: 20px;
-  width: 100%;
-  height: 300px;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../images/ekko-jinx.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: darken;
-  background-color: rgba(0, 0, 0, 0.529);
-}
-.game__bind button {
-  width: 100px;
-  height: 20px;
-  font-size: 1.4rem;
-  color: white;
-  background: linear-gradient(to right, #8B0000, #654321, #006400);
-  border-radius: 8px;
-  border: transparent;
-  cursor: pointer;
-}
-@media (min-width: 744px) {
-  .game__bind {
-    margin-top: 40px;
-    height: 400px;
-  }
-  .game__bind button {
-    width: 200px;
-    height: 40px;
-    font-size: 2.4rem;
-  }
-}
-@media (min-width: 1044px) {
-  .game__bind {
-    height: 700px;
-  }
-  .game__bind button {
-    width: 350px;
-    height: 50px;
-    font-size: 2.8rem;
-    background: linear-gradient(to right, #8B0000, #654321, #006400);
-  }
-}
-.game__thirdScreen {
-  margin-top: 20px;
-  width: 100%;
-  height: 300px;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../images/jinx-vs-vi.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: darken;
-  background-color: rgba(0, 0, 0, 0.529);
-}
-.game__thirdScreen__personagens {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  margin-top: 10px;
-}
-.game__thirdScreen__personagens img {
-  width: 50px;
-  height: 35px;
-}
-.game__thirdScreen__personagens .personagem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.game__thirdScreen__personagens .personagem img {
-  height: 80px;
-  width: 101px;
-}
-.game__thirdScreen__personagens .personagem h4 {
-  font-size: 1.6rem;
-}
-.game__thirdScreen__personagens .personagem table td {
-  padding-right: 12px;
-  padding-left: 12px;
-}
-@media (min-width: 744px) {
-  .game__thirdScreen {
-    margin-top: 40px;
-    height: 400px;
-  }
-  .game__thirdScreen__personagens img {
-    width: 100px;
-    height: 70px;
-  }
-  .game__thirdScreen__personagens .personagem img {
-    height: 160px;
-    width: 202px;
-  }
-  .game__thirdScreen__personagens .personagem h4 {
-    font-size: 2rem;
-  }
-  .game__thirdScreen__personagens .personagem table {
-    font-size: 2rem;
-  }
-  .game__thirdScreen__personagens .personagem table td {
-    padding-right: 12px;
-    padding-left: 12px;
-  }
-}
-@media (min-width: 1044px) {
-  .game__thirdScreen {
-    height: 700px;
-  }
-  .game__thirdScreen__personagens img {
-    width: 200px;
-    height: 140px;
-  }
-  .game__thirdScreen__personagens .personagem img {
-    height: 320px;
-    width: 404px;
-  }
-  .game__thirdScreen__personagens .personagem h4 {
-    font-size: 2.4rem;
-  }
-  .game__thirdScreen__personagens .personagem table {
-    font-size: 2.4rem;
-  }
-  .game__thirdScreen__personagens .personagem table td {
-    padding-right: 12px;
-    padding-left: 12px;
-  }
-}
-@media (min-width: 744px) {
-  .game {
-    margin-top: 50px;
-    margin-bottom: 100px;
-  }
-}
-
-#resultado {
-  font-size: 2rem;
-}
-@media (min-width: 744px) {
-  #resultado {
-    font-size: 3rem;
-  }
-}
-
-.container3 {
-  display: flex;
-  width: 100%;
-  background-color: #050505;
-  height: 50%;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(../images/zaun-depths.jpg);
-  background-size: cover;
-  background-blend-mode: darken;
-  background-attachment: fixed;
-}
-
-.painel {
-  background-size: auto 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 80vh;
-  cursor: pointer;
-  flex: 0.5;
-  margin: 10px;
-  position: relative;
-  transition: flex 0.7s ease-in;
-}
-
-.painel h3 {
-  font-size: 1.5rem;
-}
-
-.painel:active {
-  flex: 5;
-}
-
-.painel.active h3 {
-  opacity: 1;
-  transition: opacity 2s ease-in;
-}
-
-.text {
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .container3 {
-    width: 100%;
-    height: 50%;
-  }
-  .painel:nth-of-type(4),
-  .painel:nth-of-type(5) {
-    display: none;
-  }
-}
-.zaun-section {
-  text-align: center;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  font-family: "League Gothic", sans-serif;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.518);
-  background-attachment: fixed;
-  background-position: center;
-  background-blend-mode: darken;
-  background-image: url(../images/arcane-jinx-lol-skin-splash-art-hd-wallpaper-uhdpaper.com-16@1@e.jpg);
-}
-
-.zaun-title {
-  font-size: 3.4rem;
-  font-family: "League Gothic", sans-serif;
-}
-
-.slider-container {
-  margin: 20px 0;
-  overflow: hidden;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s;
-}
-
-.slider img {
-  width: 50%;
-  height: auto;
-  margin-right: 10px;
-}
-
-.zaun-description-title {
-  font-size: 3.4rem;
-}
-
-.zaun-description {
-  font-size: 2.4rem;
-}
-
-/* Adicione regras de CSS para telas menores (responsividade) */
-@media screen and (max-width: 768px) {
-  .zaun-section {
-    padding: 10px;
-  }
-  .zaun-title {
-    font-size: 28px;
-  }
-  .zaun-description-title {
-    font-size: 20px;
-  }
-  .zaun-description {
-    font-size: 16px;
-  }
-}
-footer {
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(../images/bg-ing.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  background-blend-mode: darken;
-  color: #c0b599;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-  height: 30%;
-}
-
-.logo {
-  width: 20rem;
-  height: 20rem;
-  margin-right: 10px;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-  margin: 2.4rem 2.4rem;
-}
-
-.footer-links a {
-  font-size: 2.4rem;
-  color: #c0b599;
-  font-family: "League Gothic", sans-serif;
-  letter-spacing: 1;
-  margin: 2.4rem;
-  padding: 2.4rem;
-}
-
-.footer-links a:hover {
-  color: #8b6b37;
-  scale: 1;
-}
-
-#copyright {
-  font-size: 2.4rem;
-  color: #c0b599;
-  font-family: "League Gothic", sans-serif;
-  letter-spacing: 1; /* Cor de texto marrom escuro */
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  color: #c0b599;
-}
-
-body {
-  background-color: black;
-}
-
-:root {
-  font-size: 65.5%;
-}
-
-::-webkit-scrollbar {
+::-webkit-scrollbar{
   width: 10px;
   display: none;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
   background-color: #c0b599;
   border-radius: 5px;
 }
 
-.title-big {
-  font-size: 3.4rem;
-  color: #8b6b37;
-  font-family: "League Gothic", sans-serif;
-  letter-spacing: 1;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;;
 }
 
-.title--medium {
-  font-size: 2.4rem;
-  color: #c0b599;
-  font-family: "League Gothic", sans-serif;
-  text-decoration: none;
-  text-transform: none;
-  font-weight: 400;
+body{
+  background: linear-gradient(to bottom,  #8B0000 , #006400);
 }
 
-#zaun-region {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1.25rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(../images/zaun.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-blend-mode: darken;
-  backdrop-filter: blur(2px);
+section, footer{
+    padding: 54px 0;
 }
 
-.title-big {
-  margin: 2.4rem 2.4rem;
-  letter-spacing: 2px; /* Ajuste o espaçamento entre letras */
+h3{
+    font-size: 50px;
 }
 
-.img-icon-zaun img {
-  transition: transform 0.3s ease-in-out;
+p{
+    color: #0000009c;
 }
 
-.img-icon-zaun img:hover {
-  transform: scale(1.1); /* Efeito de escala (hover) na imagem do ícone */
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
 }
 
-.description-zaun {
-  width: 80%;
+
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30%;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.684);
 }
 
-#zaun-region1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1.25rem;
-  background-position: center center;
-  background-image: url(../images/renata-bsron.jpg);
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.434);
-  background-blend-mode: darken;
-  backdrop-filter: blur(2px);
-}
-
-#zaun-region3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1.25rem;
-  background-color: rgba(0, 0, 0, 0.347);
-  background-image: url(../images/lab-quimtec.jpg);
-  background-size: cover;
-  background-blend-mode: darken;
-  backdrop-filter: blur(2px);
-  background-position: center;
-}
-
-.scrollTop {
-  outline: none;
-  border: 0;
-  background-color: white;
-  width: 60px;
-  height: 60px;
-  padding: 8px;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  display: none;
-}
-
-.scrollTop img {
-  width: 100%;
-  height: 100%;
-}
-
-.scrollTop.show {
-  display: block;
-}
-
-.hidden {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .arc__box {
-    padding: 10px;
-    position: relative;
-    top: 5rem;
-    left: 0;
-    right: 1rem;
-    bottom: 0;
-  }
-  .arc_nav_theme {
-    margin-top: 2.1rem;
+nav{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    backdrop-filter: blur(2px);
-  }
-  input[type=email] {
-    width: 100%;
-  }
+    justify-content: space-between;
+    padding-top: 30px;
 }
 
-/*# sourceMappingURL=style.css.map */
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: #c0b599;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    display: block;
+}
+
+nav ul a:not(.btn)::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+    color: #8b6b37;
+}
+
+
+
+/*Menu Mobile*/
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: #c0b599;
+    display: none;
+}
+nav .close-icon{
+    display: none;
+    font-size: 30px;
+    color: #c0b599;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1{
+    font-size: 2.5rem;
+    color: #8b6b37;
+}
+
+.banner .banner-text p{
+    font-size: 1.3rem;
+    color: #c0b599;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+/* o que e cpaas*/
+.oque-cpaas .container{
+    display: flex;
+    align-items: center;
+}
+
+.oque-cpaas .oque-cpaas-text{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.oque-cpaas .oque-cpaas-text h3{
+    font-size: 56px;
+    color: #8b6b37;
+}
+
+.oque-cpaas .oque-cpaas-text p{
+    margin: 5px 0 10px 0;
+    color: #c0b599;
+}
+
+.oque-cpaas .oque-cpaas-img{
+    width: 50%;
+}
+
+.oque-cpaas .oque-cpaas-img img{
+    width: 100%;
+}
+
+
+
+
+/* Transformção Digital CPAAS*/
+
+.oque-cpaas2 .container{
+    display: flex;
+    align-items: center;
+}
+
+.oque-cpaas2 .oque-cpaas2-text{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.oque-cpaas2 .oque-cpaas2-text h3{
+    font-size: 40px;
+    color: #8b6b37;
+}
+
+.oque-cpaas2 .oque-cpaas2-text p{
+    margin: 5px 0 10px 0;
+    color: #c0b599;
+}
+
+.oque-cpaas2 .oque-cpaas2-img{
+    width: 50%;
+}
+
+.oque-cpaas2 .oque-cpaas2-img img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/*rodapé do Home*/
+
+.rodape {
+    background-color: #4f9cf9;
+    text-align: center;
+}
+
+.rodape i {
+    color: #4f9cf9;
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.rodape p {
+    margin-top: 10px;
+    color: white;
+}
+
+@media(max-width: 830px){
+    /*Menu Mobile*/
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color:#8b00004e ;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+    .ul.open{
+        clip-path: circle(141.4% at 100% 0);
+    }
+    .ul a{
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    nav .menu-icon{
+        display: block;
+    }
+    nav .close-icon{
+        display: block;
+        position: absolute;
+        top: 46px;
+        right: 28px;
+    }
+    /*Página Home Reponsiva*/
+    
+    .oque-cpaas .oque-cpaas-text{
+        margin-top: 10px;
+        padding: 0 20px;
+        order: 1;
+    }
+    .oque-cpaas .container{
+        flex-direction: column;
+    }
+    .oque-cpaas .oque-cpaas-text h3{
+        font-size: 48px;
+    }
+    .oque-cpaas .oque-cpaas-text,
+    .oque-cpaas .oque-cpaas-img{
+        width: 100%;
+    }
+    /*Transformação Digital Responsiva*/
+
+    .oque-cpaas2 .oque-cpaas2-text{
+        margin-top: 10px;
+        padding: 0 20px;
+        order: 1;
+    }
+    .oque-cpaas2 .container{
+        flex-direction: column;
+    }
+    .oque-cpaas2 .oque-cpaas2-text h3{
+        font-size: 48px;
+    }
+    .oque-cpaas2 .oque-cpaas2-text,
+    .oque-cpaas2 .oque-cpaas2-img{
+        width: 100%;
+    }
+
+    /*Banner Responsivo*/
+    .banner .banner-text{
+        padding: 0;
+        margin: 80px;
+    }
+    .banner .banner-text  h1{
+        font-size: 2.5rem;
+    }
+    .banner .banner-text  p{
+        font-size: 1.3rem;
+    }
+
+    .depoimentos .card-item{
+        width: 100%;
+    }
+    .servicos .card-servico{
+        width: 100%;
+    }
+}
+
+.wrapper{
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.1s;
+}
+
+.link{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #c0b599;
+  border: 2px solid #654321;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.link span{
+  position: relative;
+  z-index: 2;
+}
+
+.link:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+}
+
+.link:hover{
+  color: #fff;
+}
+
+.link:hover:after{
+  width: 100%;
+}
+
+.hr-style{
+    height: 1px;
+    width: 100%;
+    background-color: #c0b599;
+    margin: 10px 0;
+    box-shadow: 3px solid rgba(255, 255, 255, 0.699);
+    border-radius: 10px;
+}
+.midia-bg{
+    background-image: url(../src/images/Vi\ violet\ Arcane\ wallpaper\ _3.jpg);
+}
+.container4 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #8b6b37;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
