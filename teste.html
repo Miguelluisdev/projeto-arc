@@ -1,39 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Cartões 3D Responsivos</title>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel 1</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <style>
-      
-/* personal */
-      body{
-        background-color: black;
-      }
-    </style>
-</head>
-<body>
-  <div class="video-container">
-       
-    <iframe src="https://cdn.discordapp.com/attachments/1151211352958959826/1183507483038322788/gif-arcane.gif?ex=6588963c&is=6576213c&hm=7cbb6b3bca32f8eaa729c1c98a1ea1a4054a13ee54b4dc1a0d2d18dc8edc333a&" frameborder="0" allowfullscreen></iframe>
-</div>
-    <img src="zaun_promenade_04 (1).png" alt="">
-      
-   <script>
-    
-const paineis = document.querySelectorAll(".painel");
-
-paineis.forEach((painel) => {
-  painel.addEventListener("click", () => {
-    removeActiveClasses()
-  })
-})
-
-function removeActiveClasses(){
-  paineis.forEach(painel => {
-    painel.classList.remove("active")
-  })
+      html,
+body {
+  height: 100%;
 }
-   </script>
-</body>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #3b395c;
+  font-family: "Euclid Circular A";
+  text-align: center;
+}
+
+.card {
+  width: 34rem;
+  height: 34rem;
+  padding: 0;
+  border-radius: 10px;
+ 
+}
+
+h2 {
+  color: #f9f9f9;
+  margin: 0 0 6px;
+  font-weight: 500;
+}
+
+h3 {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 24px;
+  font-weight: 400;
+  font-size: 14px;
+  align-self: stretch;
+}
+
+
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 130px;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  box-shadow: none;
+  background: #864dfb;
+  width: 16px;
+  height: 16px;
+}
+
+.swiper-horizontal .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: auto;
+  bottom: 56px;
+}
+
+.swiper-slide img {
+  height: 170px;
+  margin-bottom: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <!-- Slider main container -->
+    <div class="card">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div className="image-wrapper">
+              <img src="./src/images/arcane-header.jpg" />
+            </div>
+            <h2>Create Account</h2>
+            <h3>Tell us who you are</h3>
+          </div>
+          <div class="swiper-slide">
+            <div className="image-wrapper">
+              <img src="./src/images/arcane-jinx-lol-skin-splash-art-hd-wallpaper-uhdpaper.com-16@1@e.jpg" />
+            </div>
+            <h2>Security Info</h2>
+            <h3>Enter a strong password</h3>
+          </div>
+          <div class="swiper-slide">
+            <div className="image-wrapper">
+              <img src="3.svg" />
+            </div>
+            <h2>Get Started</h2>
+            <h3>You're all set and ready</h3>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  speed: 500,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+    </script>
+  </body>
 </html>

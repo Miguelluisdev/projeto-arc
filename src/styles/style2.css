@@ -131,31 +131,31 @@ nav .close-icon{
 }
 
 /* o que e cpaas*/
-.oque-cpaas .container{
+.lore .container{
     display: flex;
     align-items: center;
 }
 
-.oque-cpaas .oque-cpaas-text{
+.lore .text{
     width: 50%;
     padding: 0 40px;
 }
 
-.oque-cpaas .oque-cpaas-text h3{
+.lore .text h3{
     font-size: 56px;
     color: #8b6b37;
 }
 
-.oque-cpaas .oque-cpaas-text p{
+.lore .text p{
     margin: 5px 0 10px 0;
     color: #c0b599;
 }
 
-.oque-cpaas .oque-cpaas-img{
+.lore .lore-img{
     width: 50%;
 }
 
-.oque-cpaas .oque-cpaas-img img{
+.lore .lore-img img{
     width: 100%;
 }
 
@@ -164,31 +164,31 @@ nav .close-icon{
 
 /* Transformção Digital CPAAS*/
 
-.oque-cpaas2 .container{
+.lore2 .container{
     display: flex;
     align-items: center;
 }
 
-.oque-cpaas2 .oque-cpaas2-text{
+.lore2 .text2{
     width: 50%;
     padding: 0 40px;
 }
 
-.oque-cpaas2 .oque-cpaas2-text h3{
+.lore2 .text2 h3{
     font-size: 40px;
     color: #8b6b37;
 }
 
-.oque-cpaas2 .oque-cpaas2-text p{
+.lore2 .text2 p{
     margin: 5px 0 10px 0;
     color: #c0b599;
 }
 
-.oque-cpaas2 .oque-cpaas2-img{
+.lore2 .lore2-img{
     width: 50%;
 }
 
-.oque-cpaas2 .oque-cpaas2-img img{
+.lore2 .lore2-img img{
     width: 100%;
 }
 
@@ -252,36 +252,36 @@ nav .close-icon{
     }
     /*Página Home Reponsiva*/
     
-    .oque-cpaas .oque-cpaas-text{
+    .lore .text{
         margin-top: 10px;
         padding: 0 20px;
         order: 1;
     }
-    .oque-cpaas .container{
+    .lore  .container{
         flex-direction: column;
     }
-    .oque-cpaas .oque-cpaas-text h3{
+    .lore  .text h3{
         font-size: 48px;
     }
-    .oque-cpaas .oque-cpaas-text,
-    .oque-cpaas .oque-cpaas-img{
+    .lore  .text,
+    .lore  .lore-img{
         width: 100%;
     }
     /*Transformação Digital Responsiva*/
 
-    .oque-cpaas2 .oque-cpaas2-text{
+    .lore2 .text2{
         margin-top: 10px;
         padding: 0 20px;
         order: 1;
     }
-    .oque-cpaas2 .container{
+    .lore2 .container{
         flex-direction: column;
     }
-    .oque-cpaas2 .oque-cpaas2-text h3{
+    .lore2 .text2 h3{
         font-size: 48px;
     }
-    .oque-cpaas2 .oque-cpaas2-text,
-    .oque-cpaas2 .oque-cpaas2-img{
+    .lore2 .text2,
+    .lore2 .lore2-img{
         width: 100%;
     }
 
@@ -481,4 +481,30 @@ footer {
     text-transform: none;
     font-weight: 400;
   }
-  
+  .load{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .loader-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #555;
+    border-top-color:#8b6b37 ;
+    animation: loader-circle 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Initially hide the loader */
+  }
+  @keyframes loader-circle {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
