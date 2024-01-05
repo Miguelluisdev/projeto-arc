@@ -8,11 +8,11 @@
     <link rel="shortcut icon" href="images/icons8-jogos-de-motim-48.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--CSS Principal-->
+   
     
     <link rel="stylesheet" href="styles/style2.css">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -191,11 +191,15 @@
 
                     
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script src="./scripts/main2.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+       AOS.init({
+  offset: 200, // Adjust this value
+  duration: 800, // Adjust this value
+});
       </script>
-    <script src="./scripts/main2.js"></script>
+  
 
 
             </body>
