@@ -10,14 +10,14 @@ function closeMenu(){
 
 const body = document.getElementById("main");
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Page has finished loading, hide the loader
-   body.style.display = "none"
-    document.querySelector('.loader-circle').style.display = 'block';
-});
+    document.addEventListener("DOMContentLoaded", function () {
+    body.style.display = "none"
+        document.querySelector('.loader-circle').style.display = 'block';
+    });
 
-window.addEventListener("load", function () {
-    // Page has started loading, show the loader
-    document.querySelector('.loader-circle').style.display = 'none';
-    body.style.display = "block"
-});
+    window.addEventListener("load", function () {
+        document.querySelector('.loader-circle').style.display = 'none';
+        body.style.display = "block"
+    });
+
+

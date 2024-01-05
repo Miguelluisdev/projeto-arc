@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-
+:root {
+    --white: #FFF;
+    --gray: #363638;
+    --gray-mid: #9D9D9D;
+    --gray-dark: #3e3e3e;
+    --gray-hover: #F7F7F7;
+    --body-background: #1F192D;
+    --primary: #8543CC;
+    --primary-border: #42375d;
+    --text: #CEC0E0;
+    --widget-background: #3A2D54;
+}
 
 ::-webkit-scrollbar{
   width: 10px;
@@ -508,3 +519,46 @@ footer {
       transform: rotate(360deg);
     }
   }
+
+  .center-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tab-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tab-content {
+    flex: 1 0 100%; /* Take up equal space in a row */
+    background-color:rgb(4, 4, 4);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.tab-content:hover {
+    background: linear-gradient(to right, #2a2319, #1e2507); /* Change the gradient on hover */
+}
+.tab-content img :hover{
+    scale: 1.5;
+}
+h2, p {
+    color: #8b6b37;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .tab-content {
+        flex: 0 0 100%; /* Take up full width on smaller screens */
+    }
+}
