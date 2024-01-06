@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-:root {
-    --white: #FFF;
-    --gray: #363638;
-    --gray-mid: #9D9D9D;
-    --gray-dark: #3e3e3e;
-    --gray-hover: #F7F7F7;
-    --body-background: #1F192D;
-    --primary: #8543CC;
-    --primary-border: #42375d;
-    --text: #CEC0E0;
-    --widget-background: #3A2D54;
-}
-
 ::-webkit-scrollbar{
   width: 10px;
   display: block;
@@ -103,9 +90,6 @@ nav ul a:hover::after{
     color: #8b6b37;
 }
 
-
-
-/*Menu Mobile*/
 nav .menu-icon{
     cursor: pointer;
     font-size: 25px;
@@ -141,7 +125,6 @@ nav .close-icon{
     margin: 18px 0;
 }
 
-/* o que e cpaas*/
 .lore .container{
     display: flex;
     align-items: center;
@@ -169,11 +152,6 @@ nav .close-icon{
 .lore .lore-img img{
     width: 100%;
 }
-
-
-
-
-/* Transformção Digital CPAAS*/
 
 .lore2 .container{
     display: flex;
@@ -204,13 +182,6 @@ nav .close-icon{
 }
 
 
-
-
-
-
-
-/*rodapé do Home*/
-
 .rodape {
     background-color: #4f9cf9;
     text-align: center;
@@ -231,7 +202,7 @@ nav .close-icon{
 }
 
 @media(max-width: 830px){
-    /*Menu Mobile*/
+
     .ul{
         position: fixed;
         top: 0;
@@ -261,7 +232,7 @@ nav .close-icon{
         top: 46px;
         right: 28px;
     }
-    /*Página Home Reponsiva*/
+
     
     .lore .text{
         margin-top: 10px;
@@ -278,7 +249,7 @@ nav .close-icon{
     .lore  .lore-img{
         width: 100%;
     }
-    /*Transformação Digital Responsiva*/
+  
 
     .lore2 .text2{
         margin-top: 10px;
@@ -296,7 +267,6 @@ nav .close-icon{
         width: 100%;
     }
 
-    /*Banner Responsivo*/
     .banner .banner-text{
         padding: 0;
         margin: 80px;
@@ -386,7 +356,7 @@ nav .close-icon{
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; 
     overflow: hidden;
     max-width: 100%;
     margin-top: 20px;
@@ -444,7 +414,7 @@ footer {
     font-size: 1.4rem;
     color: #c0b599;
     font-family: "League Gothic", sans-serif;
-    letter-spacing: 1; /* Cor de texto marrom escuro */
+    letter-spacing: 1;
   }
 
   #zaun-region {
@@ -455,14 +425,14 @@ footer {
     padding: 1.25rem;
     /* background-image: url(../images/2arcane.jpg); */
     background-size: cover;
-    /* background-attachment: fixed; */
+    
     background-blend-mode: darken;
     backdrop-filter: blur(2px);
   }
   
   .title-big {
     margin: 2.4rem 2.4rem;
-    letter-spacing: 2px; /* Ajuste o espaçamento entre letras */
+    letter-spacing: 2px; 
   }
   
   .img-icon-zaun img {
@@ -470,7 +440,7 @@ footer {
   }
   
   .img-icon-zaun img:hover {
-    transform: scale(1.1); /* Efeito de escala (hover) na imagem do ícone */
+    transform: scale(1.1); 
   }
   
   .description-zaun {
@@ -509,7 +479,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none; /* Initially hide the loader */
+    display: none; 
   }
   @keyframes loader-circle {
     0% {
@@ -533,7 +503,7 @@ footer {
 }
 
 .tab-content {
-    flex: 1 0 100%; /* Take up equal space in a row */
+    flex: 1 0 100%; 
     background-color:rgb(4, 4, 4);
     padding: 20px;
     box-sizing: border-box;
@@ -541,7 +511,7 @@ footer {
 }
 
 .tab-content:hover {
-    background: linear-gradient(to right, #2a2319, #1e2507); /* Change the gradient on hover */
+    background: linear-gradient(to right, #2a2319, #1e2507); 
 }
 .tab-content img :hover{
     scale: 1.5;
@@ -559,6 +529,14 @@ img {
 
 @media (max-width: 768px) {
     .tab-content {
-        flex: 0 0 100%; /* Take up full width on smaller screens */
+        flex: 0 0 100%; 
     }
 }
+
+.playlist {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    height: 100vh; 
+  }
