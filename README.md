@@ -1,30 +1,32 @@
-# projeto-arc
-<p>Project inspired by the animated series Arcane
-Produced by Riot games and Netflix
+# 
+Projeto-Arc
+<p>Projeto inspirado na série animada Arcane
+Produzida pela Riot Games e Netflix
 </p>
-br
+<br>
 <p>
-  **Arcane Project: Justification, Objective and Planning**
+  **Projeto Arcane: Justificativa, Objetivo e Planejamento**
+O Projeto Arcane surge como um desafio final, com o objetivo de consolidar e aplicar todas as habilidades já adquiridas, além de servir como um portfólio sólido para futuras oportunidades de emprego, especialmente antes de embarcar na jornada de aprendizado de React e TypeScript.
 
-The Arcane Project appears as a final challenge, aiming to consolidate and apply all the skills already acquired, as well as serving as a solid portfolio for future job opportunities, especially before embarking on the journey of learning React and TypeScript.
+Objetivo:
+O propósito principal deste projeto é treinar e aprimorar habilidades em HTML, CSS, Sass, Bootstrap, JavaScript e bibliotecas relevantes. Além disso, será uma oportunidade de criar um portfólio robusto, destacando a capacidade de desenvolver um site completo, desde o design até a implementação da funcionalidade.
 
-**Goal:**
-The main purpose of this project is to train and improve skills in HTML, CSS, Sass, Bootstrap, JavaScript, and relevant libraries. Furthermore, it will be an opportunity to create a robust portfolio, highlighting the ability to develop a complete website, from design to functionality implementation.
+Planejamento:
+Até o final de novembro, o objetivo é implementar todas as funcionalidades identificadas, criar um layout atrativo usando o canvas e incorporar imagens e outros elementos essenciais. A meta é estabelecer uma base sólida para o projeto antes de concentrar esforços no aprendizado de React e TypeScript.
 
-**Planning:**
-By the end of November, the aim is to implement all identified features, create an attractive layout using the canvas and incorporate images and other essential elements. The goal is to establish a solid foundation for the project before focusing efforts on learning React and TypeScript.
+Execução:
+Durante a fase de execução, será adicionado conteúdo relevante sobre a série Arcane, abrangendo informações sobre temporadas, regiões, personagens, história, duelos, transição entre Piltover e Zaun, entre outros detalhes. O desenvolvimento progressivo do site será documentado, incorporando recursos conforme são implementados.
 
-**Execution:**
-During the execution phase, relevant content about the Arcane series will be added, covering information about seasons, regions, characters, history, duels, transition between Piltover and Zaun, among other details. The progressive development of the site will be documented, incorporating features as they are implemented.
+Funcionalidades:
 
-**Functionalities:**
-- Informative content about the series, including details about seasons, regions, characters, history, duels, changes between Piltover and Zaun, history of the dolls, among others.
-- Theme plugin for visual customization.
-- Jinx game as an interactive feature.
-- Note: The home and media section are missing since the decision was made to move to React and TypeScript.
-- see the features for yourself <a href="https://projeto-arc.vercel.app/" >Click here</a>
-**Closing:**
-Upon completion of development, the project will be hosted on GitHub, serving as a comprehensive portfolio demonstrating the skills acquired during this stage of learning. It is worth mentioning that the "troca-de-tema.js" file needs a review, as its code is poorly organized.
+Conteúdo informativo sobre a série, incluindo detalhes sobre temporadas, regiões, personagens, história, duelos, mudanças entre Piltover e Zaun, história das bonecas, entre outros.
+Plugin de tema para personalização visual.
+Jogo da Jinx como recurso interativo.
+Nota: A mídia esta em produção pois a decisão foi tomada de migrar para React e TypeScript.
+Veja as funcionalidades por si mesmo <a href="https://projeto-arc.vercel.app/" >Clique aqui</a>
+Conclusão:
+Ao concluir o desenvolvimento, o projeto será hospedado no vercel, servindo como um portfólio abrangente que demonstra as habilidades adquiridas durante esta etapa de aprendizado. Vale mencionar que o arquivo "troca-de-tema.js" precisa de uma revisão, pois seu código está mal organizado.
 
-This project represents not only a milestone in technical skills, but also a strategic step towards modern and more advanced technologies, such as React and TypeScript.
+Este projeto representa não apenas um marco em habilidades técnicas, mas também um passo estratégico em direção a tecnologias mais modernas e avançadas, como React e TypeScript.
+
 </p>
