@@ -19,14 +19,17 @@ Durante a fase de execução, será adicionado conteúdo relevante sobre a séri
 
 Funcionalidades:
 
-Conteúdo informativo sobre a série, incluindo detalhes sobre temporadas, regiões, personagens, história, duelos, mudanças entre Piltover e Zaun, história das bonecas, entre outros.
-Plugin de tema para personalização visual.
-Jogo da Jinx como recurso interativo.
-Nota: A mídia esta em produção pois a decisão foi tomada de migrar para React e TypeScript.
+-Conteúdo informativo sobre a série, incluindo detalhes sobre temporadas, regiões, personagens, história, duelos, mudanças entre Piltover e Zaun, história das bonecas, entre outros.
+
+-Plugin de tema para personalização visual.
+
+-Jogo da Jinx como recurso interativo.
+
+- Nota: não possui pagina midia a decisão foi tomada de migrar para React e TypeScript.
 Veja as funcionalidades por si mesmo <a href="https://projeto-arc.vercel.app/" >Clique aqui</a>
 Conclusão:
-Ao concluir o desenvolvimento, o projeto será hospedado no vercel, servindo como um portfólio abrangente que demonstra as habilidades adquiridas durante esta etapa de aprendizado. Vale mencionar que o arquivo "troca-de-tema.js" precisa de uma revisão, pois seu código está mal organizado.
+        Ao concluir o desenvolvimento, o projeto será hospedado no vercel, servindo como um portfólio abrangente que demonstra as habilidades adquiridas durante esta etapa de aprendizado. Vale mencionar que o arquivo "troca-de-tema.js" precisa de uma revisão, pois seu código está mal organizado.
 
-Este projeto representa não apenas um marco em habilidades técnicas, mas também um passo estratégico em direção a tecnologias mais modernas e avançadas, como React e TypeScript.
+     Este projeto representa não apenas um marco em habilidades técnicas, mas também um passo estratégico em direção a tecnologias mais modernas e avançadas, como React e TypeScript.
 
 </p>
