@@ -1,5 +1,5 @@
 # 
-Projeto-Arc
+Projeto-Arc(FINALIZADO)
 <p>Projeto inspirado na série animada Arcane
 Produzida pela Riot Games e Netflix
 </p>
