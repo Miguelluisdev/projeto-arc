@@ -13,8 +13,5 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.10.1",
     "sharp": "^0.31.3"
-  },
-  "dependencies": {
-    "json-server": "^1.0.0-alpha.11"
   }
 }
