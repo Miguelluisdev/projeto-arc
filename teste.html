@@ -1,130 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carousel 1</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <style>
-      html,
-body {
-  height: 100%;
-}
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navegação</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-* {
-  box-sizing: border-box;
-}
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
 
-body {
-  margin: 0;
-  display: grid;
-  place-items: center;
-  background: #3b395c;
-  font-family: "Euclid Circular A";
-  text-align: center;
-}
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #eee;
+      padding: 10px;
+    }
 
-.card {
-  width: 34rem;
-  height: 34rem;
-  padding: 0;
-  border-radius: 10px;
- 
-}
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
 
-h2 {
-  color: #f9f9f9;
-  margin: 0 0 6px;
-  font-weight: 500;
-}
+    section {
+      padding: 20px;
+    }
 
-h3 {
-  color: rgba(255, 255, 255, 0.5);
-  margin: 0 0 24px;
-  font-weight: 400;
-  font-size: 14px;
-  align-self: stretch;
-}
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Navegação</h1>
+  </header>
 
+  <nav>
+    <a href="#" onclick="changePage('home')">Home</a>
+    <a href="#" onclick="changePage('page1')">Página 1</a>
+    <a href="#" onclick="changePage('page2')">Página 2</a>
+  </nav>
 
+  <section id="content">
+    <p>Bem-vindo à página inicial!</p>
+  </section>
 
-.swiper-slide {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 0 130px;
-}
+  <footer>
+    &copy; 2024 Navegação de Páginas
+  </footer>
 
-.swiper .swiper-pagination .swiper-pagination-bullet {
-  box-shadow: none;
-  background: #864dfb;
-  width: 16px;
-  height: 16px;
-}
+  <script>
+    function changePage(page) {
+      const content = document.getElementById('content');
+      
+      // Simula o carregamento de conteúdo dinâmico
+      let newContent = '';
+      if (page === 'home') {
+        newContent = 'Bem-vindo à página inicial!';
+      } else if (page === 'page1') {
+        newContent = 'Conteúdo da Página 1.';
+      } else if (page === 'page2') {
+        newContent = 'Conteúdo da Página 2.';
+      }
 
-.swiper-horizontal .swiper-pagination-bullets.swiper-pagination-horizontal {
-  top: auto;
-  bottom: 56px;
-}
-
-.swiper-slide img {
-  height: 170px;
-  margin-bottom: 10px;
-}
-    </style>
-  </head>
-  <body>
-    <!-- Slider main container -->
-    <div class="card">
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div className="image-wrapper">
-              <img src="./src/images/arcane-header.jpg" />
-            </div>
-            <h2>Create Account</h2>
-            <h3>Tell us who you are</h3>
-          </div>
-          <div class="swiper-slide">
-            <div className="image-wrapper">
-              <img src="./src/images/arcane-jinx-lol-skin-splash-art-hd-wallpaper-uhdpaper.com-16@1@e.jpg" />
-            </div>
-            <h2>Security Info</h2>
-            <h3>Enter a strong password</h3>
-          </div>
-          <div class="swiper-slide">
-            <div className="image-wrapper">
-              <img src="3.svg" />
-            </div>
-            <h2>Get Started</h2>
-            <h3>You're all set and ready</h3>
-          </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  speed: 500,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-    </script>
-  </body>
+      content.innerHTML = `<p>${newContent}</p>`;
+    }
+  </script>
+</body>
 </html>
