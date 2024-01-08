@@ -90,24 +90,45 @@ const personName = document.getElementById("personName");
 const personHistory = document.getElementById("personHistory");
 const personImg = document.getElementById("personImg");
 
-btnChange.addEventListener("click", () => {
-  const indiceAleatorio = Math.floor(Math.random() * personagens.length);
-  const personaAtual = personagens[indiceAleatorio];
+const getRandomPerson = () => {
+  return new Promise((resolve) => {
+    const indiceAleatorio = Math.floor(Math.random() * personagens.length);
+    const personaAtual = personagens[indiceAleatorio];
+    resolve(personaAtual);
+  });
+};
 
-  personName.innerText = personaAtual.nome;
-  personImg.setAttribute("src", personaAtual.imagem);
-  personHistory.innerText = personaAtual.historia;
+btnChange.addEventListener("click", async () => {
+  try {
+    const personaAtual = await getRandomPerson();
 
-  localStorage.setItem('personaAtual', JSON.stringify(personaAtual));
+    personName.innerText = personaAtual.nome;
+    personImg.setAttribute("src", personaAtual.imagem);
+    personHistory.innerText = personaAtual.historia;
+
+    localStorage.setItem('personaAtual', JSON.stringify(personaAtual));
+  } catch (error) {
+    console.error("Error getting random person:", error);
+  }
 });
 
-const personagemSalvo = localStorage.getItem('personaAtual');
+const getSavedPersona = () => {
+  const personagemSalvo = localStorage.getItem('personaAtual');
+  if (personagemSalvo) {
+    return JSON.parse(personagemSalvo);
+  }
+};
 
-if (personagemSalvo) {
-  const personaAtual = JSON.parse(personagemSalvo);
-  personName.innerText = personaAtual.nome;
-  personImg.setAttribute("src", personaAtual.imagem);
-  personHistory.innerText = personaAtual.historia;
-} else {
-  btnChange.click();
-}
+const initializePersona = async () => {
+  const savedPersona = await getSavedPersona();
+
+  if (savedPersona) {
+    personName.innerText = savedPersona.nome;
+    personImg.setAttribute("src", savedPersona.imagem);
+    personHistory.innerText = savedPersona.historia;
+  } else {
+     btnChange.click();
+  }
+};
+
+initializePersona();
